@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import { groups } from "@/data/groups";
 import { instruments } from "@/data/instruments";
@@ -10,6 +9,7 @@ import { CountUp } from "@/components/CountUp";
 import { FavoritesSection } from "@/components/FavoritesSection";
 import { HomeFact } from "@/components/HomeFact";
 import { InstrumentCard } from "@/components/InstrumentCard";
+import { ProjectAuthors } from "@/components/ProjectAuthors";
 import { Reveal } from "@/components/Reveal";
 
 const FEATURES = [
@@ -87,24 +87,10 @@ export default function HomePage() {
             </div>
           </div>
 
-          {/* Оң жақ: сурет пен цитата */}
-          <figure className="relative m-0 overflow-hidden rounded-3xl border border-line bg-surface shadow-[var(--shadow-lg)]">
-            <Image
-              src="/img/hero.jpg"
-              alt="Даладағы домбыра — қазақтың ұлттық аспабы"
-              width={1024}
-              height={1536}
-              priority
-              sizes="(max-width: 1024px) 92vw, 46vw"
-              className="h-[clamp(300px,46vw,460px)] w-full object-cover object-[50%_42%]"
-            />
-            <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[rgb(20_25_27/0.88)] via-[rgb(20_25_27/0.45)] to-transparent px-5 pt-12 pb-5 text-white">
-              <blockquote className="m-0 font-head text-[clamp(1rem,1.6vw,1.2rem)] leading-snug">
-                «Домбыра — қазақтың жаны. Оның екі ішегінде даланың тынысы мен халықтың тарихы жатыр»
-              </blockquote>
-              <cite className="mt-1 block text-[0.82rem] not-italic opacity-85">— Ұрпаққа аманат</cite>
-            </figcaption>
-          </figure>
+          {/* Оң жақ: жоба авторлары — ғылыми жетекші мен оқушы */}
+          <Reveal delay={120}>
+            <ProjectAuthors />
+          </Reveal>
         </div>
 
         {/* Сандар */}

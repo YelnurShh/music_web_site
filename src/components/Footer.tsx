@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { groups } from "@/data/groups";
+import { STUDENT, TEACHER, authorInitialsName } from "@/data/authors";
 import { NAV } from "@/lib/nav";
 import { CloudBadge } from "./CloudBadge";
 
@@ -27,6 +28,14 @@ export function Footer() {
             Қазақтың ұлттық музыкалық аспаптарының интерактивті онлайн-энциклопедиясы. Сайт 1–6 сынып
             оқушыларына, мұғалімдерге және үлкен кісілерге арналған — қарапайым тілмен, түсінікті етіп жасалды.
           </p>
+
+          <p className="mt-4 max-w-sm text-[0.9rem] text-muted">
+            Ғылыми жетекші —{" "}
+            <b className="font-semibold text-ink-soft">{authorInitialsName(TEACHER)}</b>
+            <br />
+            Жоба авторы — <b className="font-semibold text-ink-soft">{authorInitialsName(STUDENT)}</b>
+          </p>
+
           <div className="mt-4">
             <CloudBadge />
           </div>

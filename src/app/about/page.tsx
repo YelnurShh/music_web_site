@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { groups } from "@/data/groups";
 import { instruments } from "@/data/instruments";
@@ -8,6 +9,7 @@ import { quiz } from "@/data/quiz";
 import { instrumentsByGroup } from "@/lib/utils";
 import { CloudBadge } from "@/components/CloudBadge";
 import { PageHero } from "@/components/PageHero";
+import { ProjectAuthors } from "@/components/ProjectAuthors";
 
 export const metadata: Metadata = {
   title: "Жоба туралы",
@@ -34,7 +36,22 @@ export default function AboutPage() {
         lead="«Бабалар үні – цифрлық әлемде: Қазақтың ұлттық музыкалық аспаптарының интерактивті онлайн-энциклопедиясы» — 1–6 сынып оқушыларына арналған оқу-білім сайты. Сайт мұғалімге де, ата-анаға да, оқушыға да бірдей түсінікті болуы үшін қарапайым тілмен жасалды."
       />
 
-      <section className="py-10">
+      {/* ================= ЖОБА АВТОРЛАРЫ ================= */}
+      <section className="py-10 sm:py-12">
+        <div className="mx-auto w-[min(100%-2rem,1180px)]">
+          <div className="mx-auto mb-6 max-w-2xl text-center">
+            <span className="eyebrow">Авторлар</span>
+            <h2 className="font-head text-3xl">Жоба авторлары</h2>
+            <p className="text-ink-soft">
+              Бұл сайт — ғылыми жобаның нәтижесі. Оның идеясын, мазмұнын және құрылымын оқушы
+              мұғалімнің жетекшілігімен бірлесіп жасады.
+            </p>
+          </div>
+          <ProjectAuthors title={null} eyebrow="🎓 Ғылыми жоба" className="mx-auto max-w-3xl" />
+        </div>
+      </section>
+
+      <section className="py-10 sm:py-12">
         <div className="mx-auto grid w-[min(100%-2rem,1180px)] gap-5 lg:grid-cols-2">
           <div className="card">
             <span className="card-icon" aria-hidden="true">
@@ -87,6 +104,64 @@ export default function AboutPage() {
             <div className="mt-2">
               <CloudBadge />
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ================= САЙТТЫҢ БАСТЫ БЕЙНЕСІ ================= */}
+      <section className="py-12">
+        <div className="mx-auto grid w-[min(100%-2rem,1180px)] items-center gap-8 lg:grid-cols-[0.85fr_1.15fr]">
+          <figure className="m-0 overflow-hidden rounded-3xl border border-line bg-surface shadow-[var(--shadow-md)]">
+            <Image
+              src="/img/hero.jpg"
+              alt="Даладағы домбыра — қазақтың ұлттық аспабы"
+              width={1024}
+              height={1536}
+              sizes="(max-width: 1024px) 92vw, 38vw"
+              className="h-[clamp(260px,38vw,420px)] w-full object-cover object-[50%_42%]"
+            />
+            <figcaption className="border-t border-line bg-surface-2 px-5 py-4">
+              <blockquote className="m-0 font-head text-[1rem] leading-snug text-ink">
+                «Домбыра — қазақтың жаны. Оның екі ішегінде даланың тынысы мен халықтың тарихы
+                жатыр»
+              </blockquote>
+              <cite className="mt-1 block text-[0.82rem] not-italic text-muted">
+                — Ұрпаққа аманат
+              </cite>
+            </figcaption>
+          </figure>
+
+          <div>
+            <span className="eyebrow">Сайттың бейнесі</span>
+            <h2 className="font-head text-2xl">Неге домбыра — басты сурет?</h2>
+            <p className="text-ink-soft">
+              Домбыра — қазақ халқының ең көп тараған ұлттық музыкалық аспабы. Ол тек музыка
+              ойнайтын құрал емес: күй арқылы халық өзінің тарихын, қуанышын және мұңын жеткізген.
+              Сондықтан осы сайттың бейнесі ретінде домбыра таңдалды — ол ұлттық мұраның символы.
+            </p>
+            <ul className="fact-list max-w-xl">
+              <li>
+                <span className="fact-num">1</span>
+                <span>
+                  <strong className="block">Екі ішек, жеті перне</strong>
+                  <span className="text-[0.92rem] text-ink-soft">
+                    Домбыраның оң және сол қолмен ойналатын екі ішегі бар.
+                  </span>
+                </span>
+              </li>
+              <li>
+                <span className="fact-num">2</span>
+                <span>
+                  <strong className="block">Күйдің тілі</strong>
+                  <span className="text-[0.92rem] text-ink-soft">
+                    «Ақсақ құлан», «Балбырауын» сияқты күйлер ғасырлар бойы сақталып келеді.
+                  </span>
+                </span>
+              </li>
+            </ul>
+            <Link href="/aspap/dombyra" className="btn no-underline">
+              🪕 Домбыра туралы толық оқу
+            </Link>
           </div>
         </div>
       </section>
