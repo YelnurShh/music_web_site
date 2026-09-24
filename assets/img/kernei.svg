@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="900" height="900" role="img" aria-label="Керней аспабы"><rect width="400" height="400" fill="#f4eee5"/><circle cx="200" cy="196" r="150" fill="#ffffff" opacity="0.55"/>
+  <rect x="188" y="34" width="24" height="40" rx="8" fill="#8a5a33" stroke="#6d4426" stroke-width="4"/>
+  <path d="M190 72 h20 l6 176 h-32 z" fill="#b07a4a" stroke="#7a4e2c" stroke-width="5"/>
+  <path d="M196 110 h8 M196 140 h8 M196 170 h8 M196 200 h8 M196 230 h8" stroke="#8a5a33" stroke-width="3" opacity="0.65"/>
+  <rect x="190" y="86" width="20" height="12" fill="#b4552d"/>
+  <rect x="190" y="100" width="20" height="8" fill="#1f6f6b"/>
+  <path d="M184 248 c -2 44, -30 74, -50 96 h 132 c -20 -22, -48 -52, -50 -96 z"
+        fill="#b07a4a" stroke="#7a4e2c" stroke-width="5"/>
+  <ellipse cx="200" cy="345" rx="66" ry="16" fill="#e8d9c0" stroke="#7a4e2c" stroke-width="4"/>
+  <path d="M172 250 c 18 -8, 38 -8, 56 0" fill="none" stroke="#1f6f6b" stroke-width="5" opacity="0.9"/>
+  <path d="M158 306 c 28 -10, 56 -10, 84 0" fill="none" stroke="#b4552d" stroke-width="4" opacity="0.75"/>
+</svg>

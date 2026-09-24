@@ -332,7 +332,7 @@ hr { border: 0; border-top: 1px solid var(--line); margin: 2.5rem 0; }
   background: var(--surface);
   border: 1px solid var(--line);
 }
-.hero-media img { width: 100%; height: clamp(280px, 46vw, 460px); object-fit: cover; }
+.hero-media img { width: 100%; height: clamp(300px, 48vw, 470px); object-fit: cover; object-position: 50% 42%; }
 .hero-media-caption {
   position: absolute; left: 0; right: 0; bottom: 0;
   padding: 2.5rem 1.35rem 1.15rem;
@@ -392,8 +392,8 @@ hr { border: 0; border-top: 1px solid var(--line); margin: 2.5rem 0; }
   display: flex; flex-direction: column; position: relative;
 }
 .instrument-card:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
-.ic-media { position: relative; background: var(--bg-alt); aspect-ratio: 4 / 3; overflow: hidden; }
-.ic-media img { width: 100%; height: 100%; object-fit: cover; transition: transform .5s var(--ease); }
+.ic-media { position: relative; background: var(--bg-alt); aspect-ratio: 1 / 1; overflow: hidden; display: block; }
+.ic-media img { width: 100%; height: 100%; object-fit: contain; padding: .9rem; transition: transform .5s var(--ease); }
 .instrument-card:hover .ic-media img { transform: scale(1.05); }
 .ic-emoji {
   position: absolute; left: .8rem; top: .8rem;
@@ -514,7 +514,7 @@ tbody tr:hover { background: var(--surface-2); }
   border-radius: var(--radius-lg); overflow: hidden;
   border: 1px solid var(--line); background: var(--surface); box-shadow: var(--shadow);
 }
-.detail-media img { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; }
+.detail-media img { width: 100%; aspect-ratio: 1 / 1; object-fit: contain; padding: 1.25rem; background: var(--bg-alt); }
 .detail-media .dm-foot { padding: 1rem 1.15rem; border-top: 1px solid var(--line); background: var(--surface-2); }
 
 .fact-list { list-style: none; padding: 0; margin: 0; }
