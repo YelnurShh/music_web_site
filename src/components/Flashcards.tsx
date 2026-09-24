@@ -34,7 +34,7 @@ export function Flashcards() {
 
   return (
     <div className="rounded-3xl border border-line bg-surface p-6 shadow-[var(--shadow-md)] sm:p-8">
-      <h2 className="mb-2 font-head text-xl">🗂️ Флеш-карталар</h2>
+      <h2 className="mb-2 font-head text-xl">Флеш-карталар</h2>
       <p className="mb-5 text-[0.95rem] text-ink-soft">
         Карточканы басып аударыңыз: алдында аспаптың аты, артында — қысқаша сипаты мен қызықты дерегі.
       </p>
@@ -48,12 +48,9 @@ export function Flashcards() {
         >
           <span className="flip-inner block h-full w-full">
             <span className="flip-face border border-line bg-surface shadow-[var(--shadow-sm)]">
-              <span className="text-4xl" aria-hidden="true">
-                {instrument.emoji}
-              </span>
               <strong className="font-head text-xl">{instrument.name}</strong>
               <span className={`tag ${group.tag}`}>{group.name}</span>
-              <span className="text-[0.82rem] text-muted">Аудару үшін басыңыз 👆</span>
+              <span className="text-[0.82rem] text-muted">Аудару үшін басыңыз</span>
             </span>
             <span className="flip-face bg-teal-soft [transform:rotateY(180deg)]">
               <strong className="font-head text-lg">{instrument.name}</strong>
@@ -77,11 +74,11 @@ export function Flashcards() {
 
         <div className="mt-4 flex flex-wrap justify-center gap-2">
           <button type="button" className="btn btn-sm btn-ghost" onClick={reshuffle}>
-            🔀 Араластыру
+            Араластыру
           </button>
           <SoundButton group={instrument.group} instrumentId={instrument.id} />
           <Link href={`/aspap/${instrument.id}`} className="btn btn-sm btn-ghost no-underline">
-            📖 Толық оқу
+            Толық оқу
           </Link>
         </div>
       </div>

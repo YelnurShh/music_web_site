@@ -151,18 +151,14 @@ export function Catalog() {
       ) : (
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {list.map((instrument) => (
-            <div key={instrument.id} className="relative">
-              <label className="absolute bottom-3 left-5 z-20 flex cursor-pointer items-center gap-2 rounded-full border border-line bg-surface/95 px-2.5 py-1 text-[0.76rem] font-bold text-ink-soft">
-                <input
-                  type="checkbox"
-                  className="accent-accent"
-                  checked={compareIds.includes(instrument.id)}
-                  onChange={() => toggleCompare(instrument.id)}
-                />
-                Салыстыру
-              </label>
-              <InstrumentCard instrument={instrument} />
-            </div>
+            <InstrumentCard
+              key={instrument.id}
+              instrument={instrument}
+              compare={{
+                checked: compareIds.includes(instrument.id),
+                onToggle: () => toggleCompare(instrument.id),
+              }}
+            />
           ))}
         </div>
       )}
