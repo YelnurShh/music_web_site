@@ -8,7 +8,14 @@ import { FavoriteButton } from "./FavoriteButton";
 import { SoundButton } from "./SoundButton";
 
 /** InstrumentCard — аспап туралы қысқаша карточка (каталог пен басты бетте қолданылады) */
-export function InstrumentCard({ instrument }: { instrument: Instrument }) {
+export function InstrumentCard({
+  instrument,
+  compare,
+}: {
+  instrument: Instrument;
+  /** Каталогтағы «Салыстыру» бекіштіктері — карточканың төменгі жолағында (ағымында) тұрады */
+  compare?: { checked: boolean; onToggle: () => void };
+}) {
   const group = groupById(instrument.group);
 
   return (
@@ -54,6 +61,18 @@ export function InstrumentCard({ instrument }: { instrument: Instrument }) {
           </Link>
         </div>
       </div>
+
+      {compare && (
+        <label className="flex cursor-pointer items-center gap-2 border-t border-line bg-surface-2 px-5 py-2.5 text-[0.8rem] font-bold text-ink-soft select-none">
+          <input
+            type="checkbox"
+            className="accent-accent"
+            checked={compare.checked}
+            onChange={compare.onToggle}
+          />
+          Салыстыру
+        </label>
+      )}
     </article>
   );
 }
