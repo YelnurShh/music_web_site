@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
+import { STUDENT, TEACHER, authorFullName } from "@/data/authors";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { ScrollTools, Toasts } from "@/components/Toasts";
@@ -24,7 +25,11 @@ export const metadata: Metadata = {
     "онлайн энциклопедия",
   ],
   applicationName: "Бабалар үні",
-  authors: [{ name: "Бабалар үні оқу жобасы" }],
+  authors: [
+    { name: authorFullName(TEACHER) },
+    { name: authorFullName(STUDENT) },
+  ],
+  creator: authorFullName(STUDENT),
   openGraph: {
     title: "Бабалар үні — Қазақтың ұлттық музыкалық аспаптары",
     description:
