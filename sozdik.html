@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="kk" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Сөздік — Бабалар үні</title>
+<meta name="description" content="Қазақтың музыкалық аспаптарына қатысты 32 түсінік: шанақ, тиек, перне, күй, асық, бақсы және басқалары қарапайым тілмен түсіндірілген.">
+<meta name="theme-color" content="#b4552d">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎶</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles/main.css">
+<script>
+  /* Түс режимі мен қаріп өлшемін бет ашылғанша тез орнату */
+  (function () {
+    try {
+      var t = JSON.parse(localStorage.getItem("kz_theme") || '"light"');
+      document.documentElement.setAttribute("data-theme", t === "dark" ? "dark" : "light");
+      var s = JSON.parse(localStorage.getItem("kz_scale") || "1");
+      if (s && s !== 1) document.documentElement.style.setProperty("--ui-scale", s);
+    } catch (e) {}
+  })();
+</script>
+</head>
+<body data-page="sozdik">
+
+<a class="skip-link" href="#main">Негізгі мазмұнға өту</a>
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+<header class="site-header" id="siteHeader"></header>
+
+<main id="main">
+
+  <section class="page-hero">
+    <div class="container">
+      <nav class="breadcrumbs" aria-label="Бет навигациясы">
+        <a href="index.html">Басты бет</a><span class="crumbs-sep">›</span><span>Сөздік</span>
+      </nav>
+      <h1>Түсініктер сөздігі</h1>
+      <p class="lede">Мұнда музыкаға қатысты 32 сөз қарапайым тілмен түсіндірілген. Мәтінді оқығанда
+        бейтаныс сөз кездессе, осы беттен іздеп көріңіз. Басып шығарып, дәптерге қысқаша көшіріп алуға да болады.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container-narrow">
+      <div class="toolbar">
+        <div class="field" style="flex:1">
+          <label for="glossarySearch">🔍 Сөз іздеу:</label>
+          <input id="glossarySearch" type="search" placeholder="мысалы: шанақ, күй, перне..." style="flex:1">
+        </div>
+        <button class="btn btn-sm btn-ghost" id="printGlossary">🖨️ Басып шығару</button>
+      </div>
+
+      <div class="letter-nav" id="letterNav" role="group" aria-label="Әліпби бойынша өту"></div>
+      <div id="glossaryBox"></div>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="container-narrow">
+      <div class="callout">
+        <h3>📖 Сөзді қалай оқу керек?</h3>
+        <p>Сөздің мағынасын бірден жаттап алудың қажеті жоқ. Ең бастысы — түсіну. Мысалы, «тиек» деген
+          сөзді білсеңіз, домбыраның ішегі неге дыбыс шығаратынын да түсінесіз.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer" id="siteFooter"></footer>
+<button class="to-top" id="toTop" aria-label="Беттің басына қайту">↑</button>
+<div class="toast-wrap" id="toastWrap" aria-live="polite"></div>
+
+<div class="modal-backdrop" id="modalBackdrop" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="modal">
+    <div class="modal-head">
+      <h2 id="modalTitle" style="margin:0">Ақпарат</h2>
+      <button class="modal-close" id="modalClose" aria-label="Терезені жабу">✕</button>
+    </div>
+    <div id="modalBody"></div>
+  </div>
+</div>
+
+<noscript>
+  <div class="container" style="padding:2rem 0">
+    <div class="callout callout-accent">
+      <h3>JavaScript өшірулі</h3>
+      <p>Сайттың толық жұмыс істеуі үшін браузерде JavaScript қосулы болуы керек.</p>
+    </div>
+  </div>
+</noscript>
+
+<script src="scripts/data.js"></script>
+<script src="scripts/synth.js"></script>
+<script src="scripts/app.js"></script>
+<script src="scripts/games.js"></script>
+</body>
+</html>
