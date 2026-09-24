@@ -1,0 +1,46 @@
+rules_version = '2';
+
+// ==========================================================================
+// Firestore қауіпсіздік ережелері («Бабалар үні» жобасы)
+//
+// Орнату:  firebase deploy --only firestore:rules
+// Немесе Firebase Console → Firestore Database → Rules бөліміне осы мәтінді қою.
+//
+// Логика:
+//  • users/{uid}    — пайдаланушы өз құжатын ғана оқып, жаза алады (анонимді кіру жеткілікті).
+//  • scores/{docId} — барлығы оқи алады (үздік оқушылар кестесі), бірақ жазу үшін кіру керек
+//                     және ұпай 0 мен 16 аралығында болуы тиіс.
+// ==========================================================================
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function signedIn() {
+      return request.auth != null;
+    }
+
+    // Пайдаланушы профилі: таңдаулы аспаптар, викторина нәтижесі
+    match /users/{uid} {
+      allow read: if signedIn() && request.auth.uid == uid;
+      allow create, update: if signedIn() && request.auth.uid == uid
+        && request.resource.data.favorites.size() <= 50
+        && (request.resource.data.bestScore is int)
+        && request.resource.data.bestScore >= 0
+        && request.resource.data.bestScore <= 16;
+      allow delete: if false;
+    }
+
+    // Үздік оқушылар кестесі
+    match /scores/{docId} {
+      allow read: if true;
+      allow create: if signedIn()
+        && request.resource.data.score is int
+        && request.resource.data.score >= 0
+        && request.resource.data.score <= 16
+        && request.resource.data.total is int
+        && request.resource.data.nickname is string
+        && request.resource.data.nickname.size() <= 24;
+      allow update, delete: if false;
+    }
+  }
+}

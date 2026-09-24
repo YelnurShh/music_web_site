@@ -1,0 +1,383 @@
+@import "tailwindcss";
+
+/* ==========================================================================
+   «Бабалар үні – цифрлық әлемде»
+   Tailwind CSS v4 · минимализм стилі · ашық және қараңғы түс режимі
+   ========================================================================== */
+
+/* ---------- 1. Түс режимі: класс арқылы (html.dark) ---------- */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* ---------- 2. Түс және өлшем белгілері (design tokens) ---------- */
+:root {
+  --ui-scale: 1;
+
+  --bg: #faf7f2;
+  --bg-alt: #f4eee5;
+  --surface: #ffffff;
+  --surface-2: #fdfbf8;
+  --ink: #1e2a2d;
+  --ink-soft: #3d4c50;
+  --muted: #6b7a7e;
+  --line: #e8e0d5;
+  --line-strong: #d8ccbb;
+
+  --accent: #b4552d;
+  --accent-dark: #8f3f1e;
+  --accent-soft: #f7e7de;
+  --teal: #1f6f6b;
+  --teal-soft: #e2f0ee;
+  --gold: #c89a3c;
+  --gold-soft: #f8efdc;
+  --plum: #7d5a9e;
+  --plum-soft: #f0e9f7;
+  --blue: #3e7cb1;
+  --blue-soft: #e6f0f8;
+  --ok: #2f7d4f;
+  --ok-soft: #e4f3ea;
+  --err: #b5342b;
+  --err-soft: #fbe7e5;
+
+  --shadow-sm: 0 1px 2px rgb(30 42 45 / 0.06), 0 4px 12px rgb(30 42 45 / 0.04);
+  --shadow-md: 0 6px 28px rgb(30 42 45 / 0.09);
+  --shadow-lg: 0 18px 60px rgb(30 42 45 / 0.14);
+}
+
+.dark {
+  --bg: #14191b;
+  --bg-alt: #101517;
+  --surface: #1b2225;
+  --surface-2: #202a2d;
+  --ink: #f1ece4;
+  --ink-soft: #d6d1c8;
+  --muted: #9dacb0;
+  --line: #2c3639;
+  --line-strong: #3b474b;
+
+  --accent: #e07a4d;
+  --accent-dark: #f0956c;
+  --accent-soft: #3a2419;
+  --teal: #57b8ae;
+  --teal-soft: #16302e;
+  --gold: #ddb25a;
+  --gold-soft: #33280f;
+  --plum: #b493d4;
+  --plum-soft: #271e33;
+  --blue: #7fb2db;
+  --blue-soft: #15242f;
+  --ok: #71c795;
+  --ok-soft: #16301f;
+  --err: #f08b83;
+  --err-soft: #351917;
+
+  --shadow-sm: 0 1px 2px rgb(0 0 0 / 0.4);
+  --shadow-md: 0 8px 30px rgb(0 0 0 / 0.45);
+  --shadow-lg: 0 20px 60px rgb(0 0 0 / 0.55);
+}
+
+/* Tailwind-ке түстерді таныстыру: bg-surface, text-ink, border-line ... */
+@theme inline {
+  --color-bg: var(--bg);
+  --color-bg-alt: var(--bg-alt);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-line-strong: var(--line-strong);
+  --color-accent: var(--accent);
+  --color-accent-dark: var(--accent-dark);
+  --color-accent-soft: var(--accent-soft);
+  --color-teal: var(--teal);
+  --color-teal-soft: var(--teal-soft);
+  --color-gold: var(--gold);
+  --color-gold-soft: var(--gold-soft);
+  --color-plum: var(--plum);
+  --color-plum-soft: var(--plum-soft);
+  --color-blue: var(--blue);
+  --color-blue-soft: var(--blue-soft);
+  --color-ok: var(--ok);
+  --color-ok-soft: var(--ok-soft);
+  --color-err: var(--err);
+  --color-err-soft: var(--err-soft);
+
+  --font-sans: "Manrope", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-head: "Rubik", "Manrope", ui-sans-serif, system-ui, sans-serif;
+}
+
+/* ---------- 3. Қаріптер (өз серверімізден, интернетсіз жұмыс істейді) ---------- */
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 200 800;
+  src: url("/fonts/manrope-cyrillic-ext-wght-normal.woff2") format("woff2-variations");
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 200 800;
+  src: url("/fonts/manrope-cyrillic-wght-normal.woff2") format("woff2-variations");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 200 800;
+  src: url("/fonts/manrope-latin-wght-normal.woff2") format("woff2-variations");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 300 900;
+  src: url("/fonts/rubik-cyrillic-ext-wght-normal.woff2") format("woff2-variations");
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 300 900;
+  src: url("/fonts/rubik-cyrillic-wght-normal.woff2") format("woff2-variations");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 300 900;
+  src: url("/fonts/rubik-latin-wght-normal.woff2") format("woff2-variations");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* ---------- 4. Негізгі стильдер ---------- */
+@layer base {
+  html {
+    font-size: calc(16px * var(--ui-scale));
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background-color: var(--bg);
+    color: var(--ink);
+    font-family: var(--font-sans);
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, h4, h5 {
+    font-family: var(--font-head);
+    line-height: 1.22;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+  }
+
+  /* Пернетақтамен жүрушілерге анық көрінетін белгі */
+  :focus-visible {
+    outline: 3px solid var(--gold);
+    outline-offset: 2px;
+    border-radius: 6px;
+  }
+
+  ::selection {
+    background: var(--accent-soft);
+    color: var(--ink);
+  }
+}
+
+/* ---------- 5. Қайталанатын компонент кластары ---------- */
+@layer components {
+  /* Батырмалар */
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-transparent
+      bg-accent px-5 py-3 text-[0.95rem] font-semibold leading-tight text-white no-underline
+      transition duration-200 hover:-translate-y-0.5 hover:bg-accent-dark disabled:pointer-events-none
+      disabled:opacity-50;
+  }
+  .btn-ghost {
+    @apply border-line-strong bg-surface text-ink hover:border-accent hover:bg-bg-alt hover:text-accent-dark;
+  }
+  .btn-teal {
+    @apply bg-teal hover:bg-teal;
+  }
+  .btn-sm { @apply px-3.5 py-2 text-[0.86rem]; }
+  .btn-lg { @apply px-7 py-4 text-[1.05rem]; }
+
+  /* Карточка */
+  .card {
+    @apply flex flex-col gap-3 rounded-2xl border border-line bg-surface p-5 shadow-[var(--shadow-sm)];
+  }
+  .card-hover {
+    @apply transition duration-200 hover:-translate-y-1 hover:border-line-strong hover:shadow-[var(--shadow-md)];
+  }
+  .card-icon {
+    @apply grid h-12 w-12 place-items-center rounded-2xl bg-accent-soft text-2xl text-accent;
+  }
+
+  /* Белгілер (tag) */
+  .tag {
+    @apply inline-flex items-center gap-1 rounded-full border border-line bg-bg-alt px-2.5 py-1
+      text-[0.76rem] font-bold text-ink-soft;
+  }
+  .tag-accent { @apply border-transparent bg-accent-soft text-accent-dark; }
+  .tag-teal { @apply border-transparent bg-teal-soft text-teal; }
+  .tag-gold { @apply border-transparent bg-gold-soft text-[#8a6415] dark:text-gold; }
+  .tag-plum { @apply border-transparent bg-plum-soft text-plum; }
+  .tag-blue { @apply border-transparent bg-blue-soft text-blue; }
+
+  /* Eyebrow — кішкене тақырыпша */
+  .eyebrow {
+    @apply mb-3 inline-flex items-center gap-2 rounded-full bg-accent-soft px-3 py-1.5
+      text-[0.8rem] font-bold tracking-[0.12em] text-accent uppercase;
+  }
+
+  /* Сүзгі батырмасы */
+  .chip {
+    @apply cursor-pointer rounded-full border border-line bg-surface px-4 py-2 text-[0.88rem]
+      font-semibold text-ink-soft transition duration-200 hover:border-accent hover:text-accent;
+  }
+  .chip-active { @apply border-ink bg-ink text-bg hover:text-bg; }
+
+  /* Хабарлама блогы */
+  .callout {
+    @apply rounded-r-2xl border-l-4 border-teal bg-teal-soft px-5 py-4;
+  }
+  .callout-accent { @apply border-accent bg-accent-soft; }
+  .callout-gold { @apply border-gold bg-gold-soft; }
+
+  /* Нөмірленген деректер тізімі */
+  .fact-list { @apply list-none p-0; }
+  .fact-list > li {
+    @apply flex gap-4 border-b border-dashed border-line py-3 last:border-b-0;
+  }
+  .fact-num {
+    @apply grid h-8 w-8 shrink-0 place-items-center rounded-full bg-accent-soft text-xs
+      font-bold text-accent-dark;
+  }
+
+  /* Флеш-карта мен «Жұп тап» карточкалары */
+  .flip-card { perspective: 1000px; }
+  .flip-inner {
+    @apply relative h-full w-full transition-transform duration-500 [transform-style:preserve-3d];
+  }
+  .is-flipped .flip-inner { transform: rotateY(180deg); }
+  .flip-face {
+    @apply absolute inset-0 flex flex-col items-center justify-center gap-2 rounded-2xl p-4
+      text-center [backface-visibility:hidden];
+  }
+
+  /* Дыбыс толқыны */
+  .sound-wave { @apply inline-flex h-4 items-end gap-[3px]; }
+  .sound-wave > i { @apply w-[3px] animate-[wave_1s_ease-in-out_infinite] rounded bg-accent; }
+}
+
+/* ---------- 6. Анимациялар ---------- */
+@keyframes wave {
+  0%, 100% { transform: scaleY(0.45); }
+  50% { transform: scaleY(1); }
+}
+@keyframes toastIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: none; }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: none; }
+}
+
+.animate-toast { animation: toastIn 0.25s cubic-bezier(0.22, 0.61, 0.36, 1); }
+.animate-fade { animation: fadeIn 0.3s cubic-bezier(0.22, 0.61, 0.36, 1); }
+.reveal-target { animation: slideUp 0.6s cubic-bezier(0.22, 0.61, 0.36, 1) both; }
+
+/* ---------- 7. Арнайы бөліктер ---------- */
+/* Тарихи жол (timeline) */
+.timeline { position: relative; list-style: none; padding-left: 2rem; margin: 0; }
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 0.55rem;
+  top: 0.4rem;
+  bottom: 0.4rem;
+  width: 2px;
+  border-radius: 2px;
+  background: linear-gradient(var(--accent), var(--gold), var(--teal));
+}
+.timeline > li { position: relative; padding: 0 0 1.6rem 1.5rem; }
+.timeline > li::before {
+  content: "";
+  position: absolute;
+  left: -1.72rem;
+  top: 0.55rem;
+  height: 14px;
+  width: 14px;
+  border-radius: 999px;
+  border: 3px solid var(--accent);
+  background: var(--surface);
+}
+.timeline > li:nth-child(3n + 2)::before { border-color: var(--gold); }
+.timeline > li:nth-child(3n)::before { border-color: var(--teal); }
+
+/* Прогресс жолағы */
+.progress-track { @apply h-2.5 overflow-hidden rounded-full border border-line bg-bg-alt; }
+.progress-bar {
+  @apply block h-full rounded-full transition-[width] duration-300;
+  background: linear-gradient(90deg, var(--accent), var(--gold));
+}
+
+/* Викторина нұсқалары */
+.option {
+  @apply flex w-full cursor-pointer items-center gap-3 rounded-2xl border-2 border-line bg-surface-2
+    px-4 py-3 text-left text-base font-medium transition duration-200
+    hover:translate-x-1 hover:border-accent hover:bg-accent-soft disabled:cursor-default
+    disabled:hover:translate-x-0 disabled:hover:border-line disabled:hover:bg-surface-2;
+}
+.option-key {
+  @apply grid h-8 w-8 shrink-0 place-items-center rounded-full border border-line bg-surface text-sm font-bold;
+}
+.option-correct { @apply border-ok bg-ok-soft hover:border-ok hover:bg-ok-soft; }
+.option-correct .option-key { @apply border-ok bg-ok text-white; }
+.option-wrong { @apply border-err bg-err-soft hover:border-err hover:bg-err-soft; }
+.option-wrong .option-key { @apply border-err bg-err text-white; }
+
+/* Кесте */
+.data-table { @apply w-full border-collapse text-[0.92rem]; }
+.data-table th {
+  @apply border-b border-line bg-bg-alt px-4 py-3 text-left align-top font-head text-[0.86rem] font-semibold;
+}
+.data-table td { @apply border-b border-line px-4 py-3 align-top; }
+.data-table tbody tr:last-child td { @apply border-b-0; }
+.data-table tbody tr:hover { background: var(--surface-2); }
+
+/* Карта сызбасы (каталог үшін) */
+.map-frame { @apply overflow-hidden rounded-2xl border border-line; }
+
+/* ---------- 8. Скролл мен басып шығару ---------- */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@media print {
+  .no-print { display: none !important; }
+  body { background: #fff; color: #000; }
+  .card, .print-flat { box-shadow: none !important; border: 1px solid #ccc !important; }
+  a::after { content: " (" attr(href) ")"; font-size: 0.75em; color: #555; }
+}
