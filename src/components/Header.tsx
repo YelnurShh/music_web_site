@@ -178,12 +178,15 @@ export function Header() {
       <div className="border-b border-line bg-surface">
         <div className="relative mx-auto flex min-h-[3.6rem] w-[min(100%-2rem,1180px)] items-center justify-between gap-4">
           <Link href="/" className="flex items-center gap-3 py-2 no-underline">
-            <span
+            <Image
+              src="/site-icon.svg"
+              alt=""
+              width={40}
+              height={40}
               aria-hidden="true"
-              className="grid h-10 w-10 place-items-center rounded-xl bg-gradient-to-br from-accent to-gold text-lg text-white"
-            >
-              🎶
-            </span>
+              className="h-10 w-10 rounded-xl shadow-[var(--shadow-sm)]"
+              priority
+            />
             <span className="flex flex-col leading-tight">
               <span className="font-head text-[1rem] font-bold text-ink">Бабалар үні</span>
               <span className="text-[0.72rem] text-muted">Ұлттық аспаптар энциклопедиясы</span>
