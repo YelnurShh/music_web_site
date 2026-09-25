@@ -1,12 +1,12 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Link from "next/link";
+import Image from "next/image";
 import { legends } from "@/data/legends";
+import { instruments } from "@/data/instruments";
 import { cn } from "@/lib/utils";
-import { ReadAloudButton } from "./ReadAloudButton";
 
-/** Legends — аңыздар тізімі: атын бассаңыз мәтіні ашылады, дауыстап оқуға болады */
+/** Legends — аңыздар тізімі: атын бассаңыз мәтіні ашылады. */
 export function Legends() {
   const [openIds, setOpenIds] = useState<string[]>([]);
 
@@ -28,7 +28,11 @@ export function Legends() {
 
   return (
     <>
-      <div className="mb-5">
+      <div className="mb-7 flex flex-wrap items-center justify-between gap-4 rounded-2xl border border-line bg-surface px-5 py-4 shadow-[var(--shadow-sm)]">
+        <div>
+          <p className="m-0 text-sm font-semibold text-accent">6 халық аңызы</p>
+          <p className="m-0 text-sm text-muted">Карточканы басып, аңызды толық оқыңыз</p>
+        </div>
         <button
           type="button"
           className="btn btn-sm btn-ghost"
@@ -38,49 +42,69 @@ export function Legends() {
         </button>
       </div>
 
-      <div className="flex flex-col gap-4">
+      <div className="grid items-start gap-6 md:grid-cols-2">
         {legends.map((legend, index) => {
           const open = openIds.includes(legend.id);
+          const instrument = instruments.find((item) => item.name === legend.instrument);
           return (
             <article
               key={legend.id}
               id={legend.id}
-              className="overflow-hidden rounded-2xl border border-line bg-surface shadow-[var(--shadow-sm)] scroll-mt-32"
+              className={cn(
+                "group overflow-hidden rounded-3xl border bg-surface shadow-[var(--shadow-sm)] transition duration-300 scroll-mt-32",
+                open ? "border-accent/40 shadow-[var(--shadow-md)]" : "border-line hover:-translate-y-1 hover:shadow-[var(--shadow-md)]",
+              )}
             >
               <button
                 type="button"
                 aria-expanded={open}
                 aria-controls={`legend-${legend.id}`}
                 onClick={() => toggle(legend.id)}
-                className="flex w-full cursor-pointer items-center justify-between gap-4 px-5 py-4 text-left transition hover:bg-surface-2"
+                className="w-full cursor-pointer text-left"
               >
-                <span>
-                  <span className="block text-[0.82rem] text-muted">
-                    {index + 1}-аңыз · Аспап: {legend.instrument}
+                <span className="relative block aspect-[16/9] overflow-hidden bg-gradient-to-br from-gold-soft to-teal-soft">
+                  {instrument && (
+                    <Image
+                      src={instrument.img}
+                      alt={`${legend.instrument} аспабы — ${legend.title} аңызы`}
+                      fill
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                      className="object-contain p-5 transition duration-500 group-hover:scale-105"
+                    />
+                  )}
+                  <span className="absolute top-4 left-4 rounded-full border border-white/60 bg-surface/90 px-3 py-1 text-xs font-bold text-accent shadow-sm backdrop-blur">
+                    {String(index + 1).padStart(2, "0")} · Халық аңызы
                   </span>
-                  <span className="block font-head text-[1.1rem] font-semibold">📖 {legend.title}</span>
                 </span>
-                <span
-                  aria-hidden="true"
-                  className={cn("text-xl text-accent transition-transform", open && "rotate-180")}
-                >
-                  ▾
+                <span className="flex items-center justify-between gap-4 px-5 py-5">
+                  <span>
+                    <span className="mb-1 block text-[0.78rem] font-bold tracking-[0.08em] text-teal uppercase">
+                      {legend.instrument}
+                    </span>
+                    <span className="block font-head text-[1.2rem] font-semibold text-ink">{legend.title}</span>
+                  </span>
+                  <span
+                    aria-hidden="true"
+                    className={cn(
+                      "grid h-10 w-10 shrink-0 place-items-center rounded-full bg-accent-soft text-xl text-accent transition-transform",
+                      open && "rotate-180",
+                    )}
+                  >
+                    ▾
+                  </span>
                 </span>
               </button>
 
               {open && (
-                <div className="animate-fade border-t border-line px-5 pt-4 pb-5">
+                <div id={`legend-${legend.id}`} className="animate-fade border-t border-line px-5 pt-5 pb-6">
                   {legend.paras.map((paragraph, i) => (
-                    <p key={i} className="text-ink-soft">
+                    <p key={i} className={cn("text-ink-soft", i === 0 && "first-letter:float-left first-letter:mr-2 first-letter:font-head first-letter:text-5xl first-letter:font-bold first-letter:text-accent")}>
                       {paragraph}
                     </p>
                   ))}
-                  <div className="mt-4 rounded-xl bg-gold-soft px-4 py-3 text-[0.94rem]">💭 {legend.moral}</div>
-                  <div className="mt-4 flex flex-wrap gap-2">
-                    <ReadAloudButton text={`${legend.title}. ${legend.paras.join(" ")}`} />
-                    <Link href={`/aspaptar?q=${encodeURIComponent(legend.instrument)}`} className="btn btn-sm btn-ghost no-underline">
-                      🎵 {legend.instrument} туралы оқу
-                    </Link>
+                  <div className="mt-5 rounded-2xl border border-gold/25 bg-gold-soft px-4 py-4 text-[0.94rem]">
+                    <span className="mr-2" aria-hidden="true">💭</span>
+                    {legend.moral}
                   </div>
                 </div>
               )}

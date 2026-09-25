@@ -106,7 +106,7 @@ function bowed(f: number, start: number, dur: number, vol: number) {
   });
 }
 
-/* --- 3. Үрмелі (сыбызғы, керней, ұран, мүйізсырнай) --- */
+/* --- 3. Үрмелі (сыбызғы, керней, мүйізсырнай) --- */
 function blow(f: number, start: number, dur: number, vol: number) {
   const c = ensure();
   if (!c || !master) return;
@@ -143,7 +143,7 @@ function blow(f: number, start: number, dur: number, vol: number) {
   });
 }
 
-/* --- 4. Соқпалы-ұрмалы (дауылпаз, даңғыра, шыңдауыл) --- */
+/* --- 4. Соқпалы-ұрмалы (дауылпаз, даңғыра) --- */
 function drum(start: number, dur: number, vol: number) {
   const c = ensure();
   if (!c || !master) return;
@@ -227,11 +227,9 @@ const INSTRUMENT_TUNE: Record<string, number> = {
   adyrna: -5,
   sybyzgy: 3,
   "muyiz-syrnai": -7,
-  uran: -10,
   kernei: -12,
   dauylpaz: 0,
   dangyra: 2,
-  shyndauyl: -1,
   asatayaq: 4,
   shankobyz: 6,
 };

@@ -10,7 +10,7 @@ export const NAV: NavItem[] = [
   { href: "/aspaptar", label: "Аспаптар", hint: "14 аспап каталогы" },
   { href: "/anyzdar", label: "Аңыздар", hint: "6 халық аңызы" },
   { href: "/tarih", label: "Тарих", hint: "8 тарихи кезең" },
-  { href: "/oiyn", label: "Ойындар", hint: "Викторина, «Жұп тап», флеш-карталар" },
+  { href: "/oiyn", label: "Ойындар", hint: "Викторина, «Жұп тап», «Тобына бөл», сөз құрастыру" },
   { href: "/sozdik", label: "Сөздік", hint: "32 түсінік" },
   { href: "/about", label: "Жоба туралы", hint: "Мақсаты мен нұсқаулығы" },
 ];

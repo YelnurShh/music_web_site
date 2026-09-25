@@ -6,13 +6,13 @@ import { playNote } from "@/lib/synth";
 import { shuffle } from "@/lib/utils";
 import { useApp } from "@/providers/AppProvider";
 import { cn } from "@/lib/utils";
+import { InstrumentIcon } from "./InstrumentIcon";
 
 interface MemoryCard {
   key: string;
   instrumentId: string;
   label: string;
-  emoji: string;
-  kind: "emoji" | "name";
+  kind: "image" | "name";
 }
 
 const PAIRS = 6;
@@ -33,8 +33,8 @@ export function MemoryGame() {
     const picked = shuffle(instruments).slice(0, PAIRS);
     const deck: MemoryCard[] = [];
     picked.forEach((item) => {
-      deck.push({ key: `${item.id}-emoji`, instrumentId: item.id, label: item.emoji, emoji: item.emoji, kind: "emoji" });
-      deck.push({ key: `${item.id}-name`, instrumentId: item.id, label: item.name, emoji: item.emoji, kind: "name" });
+      deck.push({ key: `${item.id}-image`, instrumentId: item.id, label: item.name, kind: "image" });
+      deck.push({ key: `${item.id}-name`, instrumentId: item.id, label: item.name, kind: "name" });
     });
     setCards(shuffle(deck));
     setFlipped([]);
@@ -124,6 +124,7 @@ export function MemoryGame() {
       <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
         {cards.map((card) => {
           const isOpen = flipped.includes(card.key) || matched.includes(card.instrumentId);
+          const instrument = instruments.find((item) => item.id === card.instrumentId);
           return (
             <button
               key={card.key}
@@ -142,7 +143,11 @@ export function MemoryGame() {
                     matched.includes(card.instrumentId) && "border-ok bg-ok-soft",
                   )}
                 >
-                  {card.kind === "emoji" ? <span className="text-4xl">{card.label}</span> : card.label}
+                  {card.kind === "image" && instrument ? (
+                    <InstrumentIcon instrument={instrument} className="h-20 w-20 rounded-2xl" />
+                  ) : (
+                    card.label
+                  )}
                 </span>
               </span>
             </button>

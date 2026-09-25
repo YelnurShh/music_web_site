@@ -22,6 +22,7 @@ export function buildSearchIndex(): SearchItem[] {
     items.push({
       kind: "Аспап",
       emoji: i.emoji,
+      image: i.img,
       title: i.name,
       subtitle: `${i.latin} · ${i.fact}`,
       href: `/aspap/${i.id}`,
@@ -55,6 +56,7 @@ export function buildSearchIndex(): SearchItem[] {
     items.push({
       kind: "Топ",
       emoji: g.icon,
+      image: instruments.find((instrument) => instrument.group === g.id)?.img,
       title: g.name,
       subtitle: g.short,
       href: `/aspaptar?top=${g.id}`,

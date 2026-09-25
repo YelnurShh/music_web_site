@@ -81,6 +81,7 @@ export function formatTime(seconds: number): string {
 export interface SearchItem {
   kind: string;
   emoji: string;
+  image?: string;
   title: string;
   subtitle: string;
   href: string;

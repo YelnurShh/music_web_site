@@ -19,15 +19,6 @@ export interface ProjectAuthor {
   given: string;
   /** Әкесінің аты */
   patronymic: string;
-  /**
-   * Фотосуреттің жолы (`public` қалтасына қатысты).
-   *
-   * Фотосуретті қою үшін жай ғана осы атаумен файл салыңыз:
-   *   public/img/teacher.jpg   ← мұғалімнің суреті
-   *   public/img/student.jpg   ← оқушының суреті
-   * Файл табылмаса, әдемі дөңгелек аватар (аты-жөнінің бас әріптері) шығады.
-   */
-  photo: string;
   /** Фотосуреттің сипаттамасы (screen reader үшін) */
   photoAlt: string;
 }
@@ -41,7 +32,6 @@ export const PROJECT_AUTHORS: ProjectAuthor[] = [
     surname: "Демеуова",
     given: "Тогжан",
     patronymic: "Абдимуратовна",
-    photo: "/img/teacher.jpg",
     photoAlt: "Ғылыми жетекші Демеуова Тогжан Абдимуратовна",
   },
   {
@@ -52,7 +42,6 @@ export const PROJECT_AUTHORS: ProjectAuthor[] = [
     surname: "Дөңесова",
     given: "Асылай",
     patronymic: "Кайсарқызы",
-    photo: "/img/student.jpg",
     photoAlt: "Жоба авторы Дөңесова Асылай Кайсарқызы",
   },
 ];

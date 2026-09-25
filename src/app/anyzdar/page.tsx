@@ -6,7 +6,7 @@ import { PageHero } from "@/components/PageHero";
 export const metadata: Metadata = {
   title: "Халық аңыздары",
   description:
-    "Қазақтың музыкалық аспаптары туралы 6 халық аңызы: Қорқыт ата, жетігеннің жеті күйі, Ақсақ құлан, шертер, адырна және дауылпаз. Дауыстап оқу мүмкіндігі бар.",
+    "Қазақтың музыкалық аспаптары туралы 6 халық аңызы: Қорқыт ата, жетігеннің жеті күйі, Ақсақ құлан, шертер, адырна және дауылпаз.",
 };
 
 export default function LegendsPage() {
@@ -15,7 +15,7 @@ export default function LegendsPage() {
       <PageHero
         crumbs={[{ href: "/", label: "Басты бет" }, { label: "Аңыздар" }]}
         title="Аспаптар туралы халық аңыздары"
-        lead="Аңыз — халық ауызша айтып жеткізген әңгіме. Оның ішінде шын тарих та, қиял да болады. Аңыздың атын бассаңыз, мәтіні ашылады. «🔊 Дыбыстап оқу» батырмасымен аңызды дауыстап тыңдауға болады."
+        lead="Аңыз — халық ауызша айтып жеткізген әңгіме. Оның ішінде шын тарих та, қиял да болады. Аңыздың атын бассаңыз, мәтіні ашылады."
       >
         <div className="mt-4 flex flex-wrap gap-3">
           <Link href="/oiyn" className="btn btn-sm btn-ghost no-underline">
@@ -27,8 +27,8 @@ export default function LegendsPage() {
         </div>
       </PageHero>
 
-      <section className="py-10">
-        <div className="mx-auto w-[min(100%-2rem,820px)]">
+      <section className="bg-[radial-gradient(circle_at_top_left,var(--gold-soft),transparent_38%),radial-gradient(circle_at_bottom_right,var(--teal-soft),transparent_42%)] py-12">
+        <div className="mx-auto w-[min(100%-2rem,1180px)]">
           <Legends />
         </div>
       </section>
@@ -40,7 +40,7 @@ export default function LegendsPage() {
             <ol className="m-0 list-decimal pl-5">
               <li>Аңызды түгел оқып шығыңыз.</li>
               <li>Қай аспап туралы екенін анықтаңыз.</li>
-              <li>Аспап бетін ашып, қосымша мәлімет оқыңыз.</li>
+              <li>Оқиғаның негізгі ойын өз сөзіңізбен айтып көріңіз.</li>
               <li>Аңыздың соңындағы «💭 Ой» бөлігін бірге талқылаңыз.</li>
             </ol>
           </div>

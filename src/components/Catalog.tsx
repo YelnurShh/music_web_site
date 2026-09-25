@@ -8,6 +8,7 @@ import type { GroupId } from "@/data/types";
 import { groupById } from "@/lib/utils";
 import { useApp } from "@/providers/AppProvider";
 import { InstrumentCard } from "./InstrumentCard";
+import { GroupIcon, InstrumentIcon } from "./InstrumentIcon";
 import { Modal } from "./Modal";
 import { cn, kzCompare } from "@/lib/utils";
 
@@ -86,7 +87,7 @@ export function Catalog() {
                 className={cn("chip", group === g.id && "chip-active")}
                 onClick={() => setGroup(g.id)}
               >
-                {g.icon} {g.name} ({count})
+                <GroupIcon groupId={g.id} className="h-6 w-6 rounded-md border-0 shadow-none" /> {g.name} ({count})
               </button>
             );
           })}
@@ -171,7 +172,9 @@ export function Catalog() {
                 <th>Белгі</th>
                 {selected.map((i) => (
                   <th key={i.id}>
-                    {i.emoji} {i.name}
+                    <span className="flex items-center gap-2">
+                      <InstrumentIcon instrument={i} className="h-8 w-8 rounded-lg" /> {i.name}
+                    </span>
                   </th>
                 ))}
               </tr>

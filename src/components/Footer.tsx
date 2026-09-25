@@ -3,6 +3,7 @@ import { groups } from "@/data/groups";
 import { STUDENT, TEACHER, authorInitialsName } from "@/data/authors";
 import { NAV } from "@/lib/nav";
 import { CloudBadge } from "./CloudBadge";
+import { GroupIcon } from "./InstrumentIcon";
 
 /** Footer — футер: сайт туралы қысқаша, беттер, аспап топтары және көмек бөлімі */
 export function Footer() {
@@ -61,9 +62,9 @@ export function Footer() {
               <li key={g.id}>
                 <Link
                   href={`/aspaptar?top=${g.id}`}
-                  className="text-ink-soft no-underline hover:text-accent hover:underline"
+                  className="flex items-center gap-2 text-ink-soft no-underline hover:text-accent hover:underline"
                 >
-                  {g.icon} {g.name}
+                  <GroupIcon groupId={g.id} className="h-7 w-7 rounded-lg" /> {g.name}
                 </Link>
               </li>
             ))}
@@ -82,11 +83,6 @@ export function Footer() {
               <li>
                 <kbd className="rounded border border-line-strong border-b-2 bg-bg-alt px-1.5 text-[0.8rem]">T</kbd>{" "}
                 — ашық/қараңғы түс
-              </li>
-              <li>
-                <kbd className="rounded border border-line-strong border-b-2 bg-bg-alt px-1.5 text-[0.8rem]">+</kbd> /{" "}
-                <kbd className="rounded border border-line-strong border-b-2 bg-bg-alt px-1.5 text-[0.8rem]">−</kbd> —
-                қаріп өлшемі
               </li>
             </ul>
             <p className="m-0">Барлық мәтін қазақ тілінде, қарапайым сөздермен жазылған.</p>

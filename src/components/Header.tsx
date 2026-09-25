@@ -3,26 +3,19 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
 import { NAV, isActivePath } from "@/lib/nav";
 import { searchSite } from "@/lib/search";
 import { useApp } from "@/providers/AppProvider";
 import { cn } from "@/lib/utils";
 
 /**
- * Header — хидер: жоғарғы көмекші жолақ (іздеу, қаріп өлшемі, түс, дыбыс) және негізгі мәзір.
+ * Header — хидер: жоғарғы көмекші жолақ (іздеу және түс режимі) және негізгі мәзір.
  * Барлық бетте көрінеді.
  */
 export function Header() {
   const pathname = usePathname();
-  const {
-    theme,
-    toggleTheme,
-    increaseScale,
-    decreaseScale,
-    resetScale,
-    soundOn,
-    toggleSound,
-  } = useApp();
+  const { theme, toggleTheme } = useApp();
 
   const [menuOpen, setMenuOpen] = useState(false);
   const [query, setQuery] = useState("");
@@ -48,7 +41,7 @@ export function Header() {
     return () => document.removeEventListener("click", onClick);
   }, []);
 
-  /* Пернетақта тіркестері: / — іздеу, T — түс, + / − — қаріп өлшемі */
+  /* Пернетақта тіркестері: / — іздеу, T — түс */
   useEffect(() => {
     function onKeyDown(event: KeyboardEvent) {
       const target = event.target as HTMLElement | null;
@@ -61,12 +54,10 @@ export function Header() {
       }
       if (typing) return;
       if (event.key === "t" || event.key === "T" || event.key === "е") toggleTheme();
-      if (event.key === "+" || event.key === "=") increaseScale();
-      if (event.key === "-" || event.key === "_") decreaseScale();
     }
     window.addEventListener("keydown", onKeyDown);
     return () => window.removeEventListener("keydown", onKeyDown);
-  }, [toggleTheme, increaseScale, decreaseScale]);
+  }, [toggleTheme]);
 
   function onSearchKeyDown(event: React.KeyboardEvent<HTMLInputElement>) {
     if (event.key === "ArrowDown" && results.length) {
@@ -149,8 +140,12 @@ export function Header() {
                           index === activeIndex && "bg-bg-alt",
                         )}
                       >
-                        <span className="grid h-9 w-9 shrink-0 place-items-center rounded-xl bg-accent-soft text-lg">
-                          {item.emoji}
+                        <span className="relative grid h-9 w-9 shrink-0 place-items-center overflow-hidden rounded-xl border border-line bg-accent-soft text-lg">
+                          {item.image ? (
+                            <Image src={item.image} alt="" fill sizes="36px" className="bg-white object-contain p-0.5" />
+                          ) : (
+                            item.emoji
+                          )}
                         </span>
                         <span className="min-w-0">
                           <span className="block truncate text-sm font-semibold text-ink">{item.title}</span>
@@ -165,19 +160,6 @@ export function Header() {
               )}
             </div>
 
-            {/* Қаріп өлшемі — үлкен кісілер үшін */}
-            <div className="flex items-center gap-1" role="group" aria-label="Қаріп өлшемі">
-              <button type="button" className={iconButton} onClick={decreaseScale} title="Қаріпті кішірейту" aria-label="Қаріпті кішірейту">
-                A−
-              </button>
-              <button type="button" className={iconButton} onClick={resetScale} title="Қалыпты өлшем" aria-label="Қаріпті қалыпты өлшемге келтіру">
-                A
-              </button>
-              <button type="button" className={iconButton} onClick={increaseScale} title="Қаріпті үлкейту" aria-label="Қаріпті үлкейту">
-                A+
-              </button>
-            </div>
-
             <button
               type="button"
               className={iconButton}
@@ -188,16 +170,6 @@ export function Header() {
               {theme === "dark" ? "☀️" : "🌙"}
             </button>
 
-            <button
-              type="button"
-              className={iconButton}
-              onClick={toggleSound}
-              title="Дыбысты қосу/өшіру"
-              aria-label="Дыбысты қосу немесе өшіру"
-              aria-pressed={!soundOn}
-            >
-              {soundOn ? "🔊" : "🔇"}
-            </button>
           </div>
         </div>
       </div>

@@ -2,18 +2,18 @@
 
 import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
-import { Flashcards } from "./Flashcards";
+import { GroupSortGame } from "./GroupSortGame";
 import { MemoryGame } from "./MemoryGame";
 import { Quiz } from "./Quiz";
-import { RhythmStudio } from "./RhythmStudio";
+import { WordBuilderGame } from "./WordBuilderGame";
 
-type TabId = "quiz" | "memory" | "flash" | "rhythm";
+type TabId = "quiz" | "memory" | "groups" | "words";
 
 const TABS: { id: TabId; label: string }[] = [
   { id: "quiz", label: "🎯 Викторина" },
   { id: "memory", label: "🧠 Жұп тап" },
-  { id: "flash", label: "🗂️ Флеш-карталар" },
-  { id: "rhythm", label: "🥁 Ырғақ" },
+  { id: "groups", label: "🧩 Тобына бөл" },
+  { id: "words", label: "🔤 Сөз құрастыр" },
 ];
 
 /** GamesTabs — ойындарды қойындылар (tabs) арқылы көрсетеді */
@@ -21,8 +21,17 @@ export function GamesTabs() {
   const [tab, setTab] = useState<TabId>("quiz");
 
   useEffect(() => {
-    const hash = window.location.hash.replace("#", "");
-    if (hash && TABS.some((t) => t.id === hash)) setTab(hash as TabId);
+    function syncFromHash() {
+      const hash = window.location.hash.replace("#", "");
+      if (TABS.some((item) => item.id === hash)) setTab(hash as TabId);
+    }
+
+    const timer = window.setTimeout(syncFromHash, 0);
+    window.addEventListener("hashchange", syncFromHash);
+    return () => {
+      window.clearTimeout(timer);
+      window.removeEventListener("hashchange", syncFromHash);
+    };
   }, []);
 
   function choose(id: TabId) {
@@ -58,8 +67,8 @@ export function GamesTabs() {
       <div role="tabpanel" id={`panel-${tab}`} aria-labelledby={`tab-${tab}`} key={tab} className="animate-fade">
         {tab === "quiz" && <Quiz />}
         {tab === "memory" && <MemoryGame />}
-        {tab === "flash" && <Flashcards />}
-        {tab === "rhythm" && <RhythmStudio />}
+        {tab === "groups" && <GroupSortGame />}
+        {tab === "words" && <WordBuilderGame />}
       </div>
     </>
   );

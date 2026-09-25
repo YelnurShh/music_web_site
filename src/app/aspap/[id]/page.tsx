@@ -6,8 +6,7 @@ import { instruments } from "@/data/instruments";
 import { groupById, instrumentsByGroup } from "@/lib/utils";
 import { FavoriteButton } from "@/components/FavoriteButton";
 import { InstrumentCard } from "@/components/InstrumentCard";
-import { NoteKeyboard } from "@/components/NoteKeyboard";
-import { ReadAloudButton } from "@/components/ReadAloudButton";
+import { GroupIcon } from "@/components/InstrumentIcon";
 import { SoundButton } from "@/components/SoundButton";
 
 /** Барлық аспап беттерін алдын ала жасаймыз (статикалық, жылдам ашылады) */
@@ -70,26 +69,22 @@ export default async function InstrumentPage({ params }: Props) {
                 <div className="border-t border-line bg-surface-2 px-5 py-4">
                   <div className="flex flex-wrap items-center justify-between gap-3">
                     <span className={`tag ${group.tag}`}>
-                      {group.icon} {group.name}
+                      <GroupIcon groupId={group.id} className="h-5 w-5 rounded-md border-0 shadow-none" /> {group.name}
                     </span>
                     <FavoriteButton id={instrument.id} variant="text" />
                   </div>
                   <div className="mt-3 flex flex-wrap items-center gap-2">
-                    <SoundButton group={instrument.group} instrumentId={instrument.id} label="Әуенін тыңдау" />
-                    <span className="text-[0.8rem] text-muted">Бұл — компьютер жасаған жуық үн</span>
+                    <SoundButton instrumentId={instrument.id} label="Нақты үнін тыңдау" />
+                    <span className="text-[0.8rem] text-muted">Интернеттегі нақты орындау жазбасы</span>
                   </div>
                 </div>
-              </div>
-
-              <div className="mt-5">
-                <NoteKeyboard group={instrument.group} />
               </div>
             </div>
 
             {/* --- Оң жақ: мәтін --- */}
             <div>
               <span className={`tag ${group.tag}`}>
-                {group.icon} {group.name}
+                <GroupIcon groupId={group.id} className="h-5 w-5 rounded-md border-0 shadow-none" /> {group.name}
               </span>
               <h1 className="mt-3 mb-1 font-head text-[clamp(1.8rem,4vw,2.6rem)] font-semibold">
                 {instrument.name}
@@ -130,7 +125,6 @@ export default async function InstrumentPage({ params }: Props) {
               <div className="mt-6 rounded-2xl border border-dashed border-line-strong bg-surface p-5">
                 <h3 className="mb-2 font-head text-lg">📖 Аңыз: {instrument.legend.title}</h3>
                 <p className="text-[0.95rem] text-ink-soft">{instrument.legend.text}</p>
-                <ReadAloudButton text={`${instrument.legend.title}. ${instrument.legend.text}`} />
               </div>
 
               <div className="callout callout-gold mt-6">
@@ -146,8 +140,8 @@ export default async function InstrumentPage({ params }: Props) {
       <section className="bg-bg-alt py-12">
         <div className="mx-auto w-[min(100%-2rem,1180px)]">
           <h2 className="font-head text-2xl">Осы топтағы басқа аспаптар</h2>
-          <p className="mb-6 max-w-2xl text-ink-soft">
-            {group.icon} {group.name} — {group.desc}
+          <p className="mb-6 flex max-w-2xl items-center gap-2 text-ink-soft">
+            <GroupIcon groupId={group.id} className="h-8 w-8" /> <span>{group.name} — {group.desc}</span>
           </p>
 
           {others.length > 0 ? (

@@ -9,7 +9,6 @@ import { prefs } from "@/lib/prefs";
 import { shuffle } from "@/lib/utils";
 import { useApp } from "@/providers/AppProvider";
 import { cn } from "@/lib/utils";
-import { SoundButton } from "./SoundButton";
 import { Leaderboard } from "./Leaderboard";
 
 const QUIZ_LENGTH = 10;
@@ -230,7 +229,6 @@ export function Quiz() {
             <button type="button" className="btn" onClick={next} autoFocus>
               {index + 1 < questions.length ? "Келесі сұрақ →" : "Нәтижені көрсету 🏁"}
             </button>
-            <SoundButton group="string" label="Дыбысты есту" />
           </div>
         </div>
       )}

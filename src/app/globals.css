@@ -265,7 +265,7 @@
       font-bold text-accent-dark;
   }
 
-  /* Флеш-карта мен «Жұп тап» карточкалары */
+  /* «Жұп тап» ойынының аударылатын карточкалары */
   .flip-card { perspective: 1000px; }
   .flip-inner {
     @apply relative h-full w-full transition-transform duration-500 [transform-style:preserve-3d];

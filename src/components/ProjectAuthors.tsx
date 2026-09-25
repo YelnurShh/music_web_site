@@ -1,10 +1,9 @@
-import fs from "node:fs";
-import path from "node:path";
-import Image from "next/image";
+import Image, { type StaticImageData } from "next/image";
+import teacherPhoto from "../../assets/apai.jpeg";
+import studentPhoto from "../../assets/okysh.jpeg";
 import {
   PROJECT_AUTHORS,
   authorGenitive,
-  authorInitials,
   authorShortName,
   type ProjectAuthor,
 } from "@/data/authors";
@@ -14,18 +13,12 @@ import { cn } from "@/lib/utils";
  * ProjectAuthors — жобаның екі авторын көрсететін карточка:
  * ғылыми жетекші (мұғалім) және жоба авторы (оқушы).
  *
- * Фотосурет қойылмаған жағдайда аты-жөнінің бас әріптері жазылған әдемі
- * дөңгелек аватар шығады. Фотосуретті қою үшін `public/img/teacher.jpg`
- * және `public/img/student.jpg` файлдарын салсаңыз жеткілікті.
+ * Фотосуреттер `assets` қалтасынан статикалық импорт арқылы алынады.
  */
-function photoExists(src: string): boolean {
-  try {
-    return fs.existsSync(path.join(process.cwd(), "public", src.replace(/^\//, "")));
-  } catch {
-    /* Файл жүйесіне қол жетпесе — қауіпсіз түрде плейсхолдерге қайтамыз */
-    return false;
-  }
-}
+const AUTHOR_PHOTOS: Record<ProjectAuthor["id"], StaticImageData> = {
+  teacher: teacherPhoto,
+  student: studentPhoto,
+};
 
 /** Қазақы өрнек: екі сызық пен үш ромбтан тұратын бөлгіш */
 function OrnamentDivider({ className }: { className?: string }) {
@@ -49,8 +42,8 @@ function OrnamentDivider({ className }: { className?: string }) {
   );
 }
 
-/** Аватар: фотосурет болса — фото, болмаса — бас әріптер */
-function Avatar({ author, hasPhoto }: { author: ProjectAuthor; hasPhoto: boolean }) {
+/** Автордың дөңгелек фотосуреті */
+function Avatar({ author, photo }: { author: ProjectAuthor; photo: StaticImageData }) {
   return (
     <span className="relative grid h-28 w-28 shrink-0 place-items-center sm:h-32 sm:w-32">
       <span
@@ -61,24 +54,16 @@ function Avatar({ author, hasPhoto }: { author: ProjectAuthor; hasPhoto: boolean
         aria-hidden="true"
         className="absolute inset-[7px] rounded-full bg-[linear-gradient(150deg,var(--accent-soft),var(--gold-soft)_58%,var(--teal-soft))] ring-1 ring-gold/50"
       />
-      {hasPhoto ? (
-        <span className="absolute inset-[7px] overflow-hidden rounded-full shadow-[var(--shadow-md)]">
-          <Image
-            src={author.photo}
-            alt={author.photoAlt}
-            fill
-            sizes="128px"
-            className="object-cover object-[50%_25%]"
-          />
-        </span>
-      ) : (
-        <span
-          aria-hidden="true"
-          className="relative font-head text-[1.65rem] font-bold tracking-[0.08em] text-accent-dark sm:text-[1.9rem]"
-        >
-          {authorInitials(author)}
-        </span>
-      )}
+      <span className="absolute inset-[7px] overflow-hidden rounded-full shadow-[var(--shadow-md)]">
+        <Image
+          src={photo}
+          alt={author.photoAlt}
+          fill
+          sizes="128px"
+          placeholder="blur"
+          className="object-cover object-[50%_22%]"
+        />
+      </span>
       <span
         aria-hidden="true"
         className="absolute right-0 bottom-1 grid h-9 w-9 place-items-center rounded-full border border-line bg-surface text-[1rem] leading-none shadow-[var(--shadow-sm)]"
@@ -90,10 +75,10 @@ function Avatar({ author, hasPhoto }: { author: ProjectAuthor; hasPhoto: boolean
 }
 
 /** Бір адамның карточкасы: аватар, қызметі және аты-жөні */
-function AuthorCard({ author, hasPhoto }: { author: ProjectAuthor; hasPhoto: boolean }) {
+function AuthorCard({ author }: { author: ProjectAuthor }) {
   return (
     <figure className="m-0 flex flex-col items-center gap-3 rounded-2xl border border-line bg-surface-2 px-4 py-5 text-center shadow-[var(--shadow-sm)]">
-      <Avatar author={author} hasPhoto={hasPhoto} />
+      <Avatar author={author} photo={AUTHOR_PHOTOS[author.id]} />
       <figcaption className="flex flex-col items-center gap-1">
         <span className={cn("tag", author.tagClass)}>{author.role}</span>
         <span className="mt-1 block font-head text-[1.02rem] leading-snug font-bold text-ink">
@@ -107,7 +92,7 @@ function AuthorCard({ author, hasPhoto }: { author: ProjectAuthor; hasPhoto: boo
 
 export function ProjectAuthors({
   className,
-  title = "Жобаны кім жасады?",
+  title = "Жоба авторлары!",
   eyebrow = "🎓 Ғылыми жоба",
 }: {
   className?: string;
@@ -115,8 +100,6 @@ export function ProjectAuthors({
   title?: string | null;
   eyebrow?: string;
 }) {
-  const photos = PROJECT_AUTHORS.map((author) => photoExists(author.photo));
-
   return (
     <aside
       aria-labelledby={title ? "project-authors-title" : undefined}
@@ -152,8 +135,8 @@ export function ProjectAuthors({
         ) : null}
 
         <div className="mt-4 grid gap-4 sm:grid-cols-2">
-          {PROJECT_AUTHORS.map((author, index) => (
-            <AuthorCard key={author.id} author={author} hasPhoto={photos[index]} />
+          {PROJECT_AUTHORS.map((author) => (
+            <AuthorCard key={author.id} author={author} />
           ))}
         </div>
 

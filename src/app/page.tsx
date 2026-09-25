@@ -9,6 +9,7 @@ import { CountUp } from "@/components/CountUp";
 import { FavoritesSection } from "@/components/FavoritesSection";
 import { HomeFact } from "@/components/HomeFact";
 import { InstrumentCard } from "@/components/InstrumentCard";
+import { GroupIcon } from "@/components/InstrumentIcon";
 import { ProjectAuthors } from "@/components/ProjectAuthors";
 import { Reveal } from "@/components/Reveal";
 
@@ -29,7 +30,7 @@ const FEATURES = [
     href: "/oiyn",
     icon: "🎯",
     title: "Ойнап білім тексеру",
-    text: "Викторина, «Жұп тап» ойыны, флеш-карталар және ырғақ жаттығуы.",
+    text: "Викторина, «Жұп тап», «Тобына бөл» және «Сөз құрастыр» ойындары.",
   },
   {
     href: "/tarih",
@@ -135,9 +136,7 @@ export default function HomePage() {
                   href={`/aspaptar?top=${group.id}`}
                   className="card card-hover h-full no-underline"
                 >
-                  <span className="card-icon text-2xl" aria-hidden="true">
-                    {group.icon}
-                  </span>
+                  <GroupIcon groupId={group.id} className="h-12 w-12 rounded-2xl" />
                   <h3 className="font-head text-xl">{group.name}</h3>
                   <p className="text-[0.94rem] text-ink-soft">{group.desc}</p>
                   <span className={`tag self-start ${group.tag}`}>
