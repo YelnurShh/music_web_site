@@ -92,7 +92,7 @@ function AuthorCard({ author }: { author: ProjectAuthor }) {
 
 export function ProjectAuthors({
   className,
-  title = "Жоба авторлары!",
+  title = "Жоба авторлары:",
   eyebrow = "🎓 Ғылыми жоба",
 }: {
   className?: string;

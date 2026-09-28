@@ -1,0 +1,235 @@
+{"kind":"deck","id":"pr/801cf8","name":"Deck"}
+{"kind":"layout","layoutId":"80ad456b-53d9-43e4-88c5-e8d73f1befa6","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"ad619f9b-4276-4c91-8b67-dac87e13fbf9","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/hobd8r","slide":1,"title":"ҒЫЛЫМИ ЖОБА ПРЕЗЕНТАЦИЯСЫ","textShapes":5}
+{"kind":"shape","id":"sh/ydcr29sv","slide":1,"bbox":[790,0,34,720]}
+{"kind":"textbox","id":"sh/wbup0za5","slide":1,"text":"ҒЫЛЫМИ ЖОБА ПРЕЗЕНТАЦИЯСЫ","textPreview":"ҒЫЛЫМИ ЖОБА ПРЕЗЕНТАЦИЯСЫ","textChars":25,"textLines":1,"bbox":[156,85,540,26]}
+{"kind":"textbox","id":"sh/xc3q94rq","slide":1,"text":"Бабалар үні\nцифрлық әлемде","textPreview":"Бабалар үні | цифрлық әлемде","textChars":26,"textLines":2,"bbox":[72,170,650,150]}
+{"kind":"textbox","id":"sh/a9s7y9sz","slide":1,"text":"Қазақтың ұлттық музыкалық аспаптарының\nинтерактивті онлайн энциклопедиясы","textPreview":"Қазақтың ұлттық музыкалық аспаптарының | интерактивті онлайн энциклопедиясы","textChars":73,"textLines":2,"bbox":[76,342,630,82]}
+{"kind":"shape","id":"sh/bal87u9k","slide":1,"bbox":[76,468,110,0]}
+{"kind":"textbox","id":"sh/onapwzat","slide":1,"text":"Жоба авторы  Дөңесова Асылай Кайсарқызы\nҒылыми жетекші  Демеуова Тогжан Абдимуратовна","textPreview":"Жоба авторы  Дөңесова Асылай Кайсарқызы | Ғылыми жетекші  Демеуова Тогжан Абдимуратовна","textChars":85,"textLines":2,"bbox":[76,490,640,72]}
+{"kind":"textbox","id":"sh/9ojq54be","slide":1,"text":"2026","textPreview":"2026","textChars":4,"textLines":1,"bbox":[76,644,160,28]}
+{"kind":"image","id":"im/gfi10zap","slide":1,"name":"","alt":"Қазақ даласындағы домбыра бейнесі","bbox":[812,0,468,720]}
+{"kind":"image","id":"im/ed0jypsj","slide":1,"name":"","alt":"Бабалар үні белгісі","bbox":[72,66,64,64]}
+{"kind":"notes","id":"nt/hobd8r","slide":1,"text":"Дереккөз: жоба сайты және жоба материалдары. Мұқаба суреті сайттың public/img/hero.jpg файлынан алынды."}
+{"kind":"slide","id":"sl/31m7x3","slide":2,"title":"БАБАЛАР ҮНІ","textShapes":12}
+{"kind":"textbox","id":"sh/ml83ax87","slide":2,"text":"БАБАЛАР ҮНІ","textPreview":"БАБАЛАР ҮНІ","textChars":11,"textLines":1,"bbox":[104,35,240,24]}
+{"kind":"textbox","id":"sh/nmh4j29s","slide":2,"text":"ЖОБА ТУРАЛЫ","textPreview":"ЖОБА ТУРАЛЫ","textChars":11,"textLines":1,"bbox":[930,36,292,20]}
+{"kind":"shape","id":"sh/0jql8nq1","slide":2,"bbox":[58,78,1164,0]}
+{"kind":"textbox","id":"sh/lkzmhsrm","slide":2,"text":"Жобаның мақсаты мен аудиториясы","textPreview":"Жобаның мақсаты мен аудиториясы","textChars":31,"textLines":1,"bbox":[58,96,1164,58]}
+{"kind":"shape","id":"sh/yh836d8v","slide":2,"bbox":[58,681,1164,0]}
+{"kind":"textbox","id":"sh/zih4fi9g","slide":2,"text":"Бабалар үні","textPreview":"Бабалар үні","textChars":11,"textLines":1,"bbox":[58,690,190,18]}
+{"kind":"textbox","id":"sh/cfql4nq5","slide":2,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[1168,688,54,20]}
+{"kind":"textbox","id":"sh/dgzmd8ra","slide":2,"text":"Негізгі мақсат","textPreview":"Негізгі мақсат","textChars":14,"textLines":1,"bbox":[58,182,390,34]}
+{"kind":"textbox","id":"sh/10vapgre","slide":2,"text":"Ұлттық аспаптарды оқушыға қарапайым тілмен таныстыру және мәдени мұраны цифрлық ортада қолжетімді ету.","textPreview":"Ұлттық аспаптарды оқушыға қарапайым тілмен таныстыру және мәдени мұраны цифрлық ортада қолжетімді ету.","textChars":102,"textLines":1,"bbox":[58,224,400,120]}
+{"kind":"textbox","id":"sh/gzmtgbat","slide":2,"text":"Кімге арналған","textPreview":"Кімге арналған","textChars":14,"textLines":1,"bbox":[58,374,390,34]}
+{"kind":"shape","id":"sh/fydsn69o","slide":2,"bbox":[58,428,12,12]}
+{"kind":"textbox","id":"sh/exkbe1s3","slide":2,"text":"1–6 сынып оқушыларына","textPreview":"1–6 сынып оқушыларына","textChars":21,"textLines":1,"bbox":[84,420,374,50]}
+{"kind":"shape","id":"sh/tcbalwbi","slide":2,"bbox":[58,482,12,12]}
+{"kind":"textbox","id":"sh/sb2tcrax","slide":2,"text":"Музыка және тарих сабақтарына","textPreview":"Музыка және тарих сабақтарына","textChars":29,"textLines":1,"bbox":[84,474,374,50]}
+{"kind":"shape","id":"sh/ratsjmtc","slide":2,"bbox":[58,536,12,12]}
+{"kind":"textbox","id":"sh/69kbahsr","slide":2,"text":"Өздігінен ізденетін пайдаланушыға","textPreview":"Өздігінен ізденетін пайдаланушыға","textChars":33,"textLines":1,"bbox":[84,528,374,50]}
+{"kind":"shape","id":"sh/58bahwb6","slide":2,"bbox":[492,172,738,424]}
+{"kind":"textbox","id":"sh/wrmt4rih","slide":2,"text":"Басты бет жобаның идеясын, авторларын және негізгі мүмкіндіктерін бірден көрсетеді.","textPreview":"Басты бет жобаның идеясын, авторларын және негізгі мүмкіндіктерін бірден көрсетеді.","textChars":83,"textLines":1,"bbox":[500,612,722,46]}
+{"kind":"image","id":"im/8ni9w3ud","slide":2,"name":"","alt":"Бабалар үні белгісі","bbox":[58,30,34,34]}
+{"kind":"image","id":"im/72psvu9o","slide":2,"name":"","geometry":"roundRect","alt":"Сайттың басты беті","bbox":[500,180,722,408]}
+{"kind":"notes","id":"nt/31m7x3","slide":2,"text":"Дереккөз: пайдаланушы ұсынған басты бет скриншоты және жоба құжаттамасы."}
+{"kind":"slide","id":"sl/73kc50","slide":3,"title":"БАБАЛАР ҮНІ","textShapes":24}
+{"kind":"textbox","id":"sh/ihsrixsb","slide":3,"text":"БАБАЛАР ҮНІ","textPreview":"БАБАЛАР ҮНІ","textChars":11,"textLines":1,"bbox":[104,35,240,24]}
+{"kind":"textbox","id":"sh/3i1sr2tw","slide":3,"text":"НАВИГАЦИЯ","textPreview":"НАВИГАЦИЯ","textChars":9,"textLines":1,"bbox":[930,36,292,20]}
+{"kind":"shape","id":"sh/s7u9orad","slide":3,"bbox":[58,78,1164,0]}
+{"kind":"textbox","id":"sh/d83axcry","slide":3,"text":"Сайттың құрылымы","textPreview":"Сайттың құрылымы","textChars":16,"textLines":1,"bbox":[58,96,1164,58]}
+{"kind":"shape","id":"sh/qlcrmhs7","slide":3,"bbox":[58,681,1164,0]}
+{"kind":"textbox","id":"sh/r6lsvm9s","slide":3,"text":"Бабалар үні","textPreview":"Бабалар үні","textChars":11,"textLines":1,"bbox":[58,690,190,18]}
+{"kind":"textbox","id":"sh/0butsra9","slide":3,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[1168,688,54,20]}
+{"kind":"textbox","id":"sh/1cna1wru","slide":3,"text":"Барлық бөлім бір мәзір арқылы байланысқан. Оқушы ақпараттан тапсырмаға, одан ойын мен сөздікке еркін өте алады.","textPreview":"Барлық бөлім бір мәзір арқылы байланысқан. Оқушы ақпараттан тапсырмаға, одан ойын мен сөздікке еркін өте алады.","textChars":111,"textLines":1,"bbox":[58,166,1164,54]}
+{"kind":"textbox","id":"sh/l07up0ba","slide":3,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[78,292,54,42]}
+{"kind":"shape","id":"sh/0zydwvup","slide":3,"bbox":[140,314,30,0]}
+{"kind":"textbox","id":"sh/zypcnqd4","slide":3,"text":"Аспаптар","textPreview":"Аспаптар","textChars":8,"textLines":1,"bbox":[186,290,250,38]}
+{"kind":"textbox","id":"sh/yxwvulcj","slide":3,"text":"12 аспап, 5 топ","textPreview":"12 аспап, 5 топ","textChars":15,"textLines":1,"bbox":[186,334,250,40]}
+{"kind":"textbox","id":"sh/947ut0b6","slide":3,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[472,292,54,42]}
+{"kind":"shape","id":"sh/83yd0vu1","slide":3,"bbox":[534,314,30,0]}
+{"kind":"textbox","id":"sh/n2pcrqtg","slide":3,"text":"Аңыздар","textPreview":"Аңыздар","textChars":7,"textLines":1,"bbox":[580,290,250,38]}
+{"kind":"textbox","id":"sh/m1gvylcv","slide":3,"text":"6 халық аңызы","textPreview":"6 халық аңызы","textChars":13,"textLines":1,"bbox":[580,334,250,40]}
+{"kind":"textbox","id":"sh/p8nuhgv2","slide":3,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[866,292,54,42]}
+{"kind":"shape","id":"sh/o7etobuh","slide":3,"bbox":[928,314,30,0]}
+{"kind":"textbox","id":"sh/gryd4b2d","slide":3,"text":"Тарих","textPreview":"Тарих","textChars":5,"textLines":1,"bbox":[974,290,250,38]}
+{"kind":"textbox","id":"sh/hcrudg3y","slide":3,"text":"8 тарихи кезең","textPreview":"8 тарихи кезең","textChars":14,"textLines":1,"bbox":[974,334,250,40]}
+{"kind":"textbox","id":"sh/upgv21k7","slide":3,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[78,472,54,42]}
+{"kind":"shape","id":"sh/fqpcb6ls","slide":3,"bbox":[140,494,30,0]}
+{"kind":"textbox","id":"sh/4fid8b2p","slide":3,"text":"Ойындар","textPreview":"Ойындар","textChars":7,"textLines":1,"bbox":[186,470,250,38]}
+{"kind":"textbox","id":"sh/pgruhg3u","slide":3,"text":"4 оқу ойыны","textPreview":"4 оқу ойыны","textChars":11,"textLines":1,"bbox":[186,514,250,40]}
+{"kind":"textbox","id":"sh/2d0v6lkj","slide":3,"text":"05","textPreview":"05","textChars":2,"textLines":1,"bbox":[472,472,54,42]}
+{"kind":"shape","id":"sh/3e9cf6l4","slide":3,"bbox":[534,494,30,0]}
+{"kind":"textbox","id":"sh/cj2dcv2l","slide":3,"text":"Сөздік","textPreview":"Сөздік","textChars":6,"textLines":1,"bbox":[580,470,250,38]}
+{"kind":"textbox","id":"sh/dkbel036","slide":3,"text":"31 түсінік","textPreview":"31 түсінік","textChars":10,"textLines":1,"bbox":[580,514,250,40]}
+{"kind":"textbox","id":"sh/nedgbu58","slide":3,"text":"06","textPreview":"06","textChars":2,"textLines":1,"bbox":[866,472,54,42]}
+{"kind":"shape","id":"sh/md4f2p4n","slide":3,"bbox":[928,494,30,0]}
+{"kind":"textbox","id":"sh/9gvyd4ne","slide":3,"text":"Жоба туралы","textPreview":"Жоба туралы","textChars":11,"textLines":1,"bbox":[974,470,250,38]}
+{"kind":"textbox","id":"sh/ofmx4zmt","slide":3,"text":"мақсат пен авторлар","textPreview":"мақсат пен авторлар","textChars":19,"textLines":1,"bbox":[974,514,250,40]}
+{"kind":"shape","id":"sh/zatg7a5c","slide":3,"bbox":[58,432,1164,0]}
+{"kind":"image","id":"im/knmtsj2x","slide":3,"name":"","alt":"Бабалар үні белгісі","bbox":[58,30,34,34]}
+{"kind":"notes","id":"nt/73kc50","slide":3,"text":"Дереккөз: сайттың негізгі навигациясы мен бөлімдеріндегі нақты мазмұн саны."}
+{"kind":"slide","id":"sl/ep6063","slide":4,"title":"БАБАЛАР ҮНІ","textShapes":11}
+{"kind":"textbox","id":"sh/hg7mxgzu","slide":4,"text":"БАБАЛАР ҮНІ","textPreview":"БАБАЛАР ҮНІ","textChars":11,"textLines":1,"bbox":[104,35,240,24]}
+{"kind":"textbox","id":"sh/gfylovy9","slide":4,"text":"НЕГІЗГІ БӨЛІМ","textPreview":"НЕГІЗГІ БӨЛІМ","textChars":13,"textLines":1,"bbox":[930,36,292,20]}
+{"kind":"shape","id":"sh/7qpkr6hs","slide":4,"bbox":[58,78,1164,0]}
+{"kind":"textbox","id":"sh/6pg3i1g7","slide":4,"text":"Аспаптар каталогы","textPreview":"Аспаптар каталогы","textChars":17,"textLines":1,"bbox":[58,96,1164,58]}
+{"kind":"shape","id":"sh/tc7mtgzy","slide":4,"bbox":[58,681,1164,0]}
+{"kind":"textbox","id":"sh/8rylkbyd","slide":4,"text":"Бабалар үні","textPreview":"Бабалар үні","textChars":11,"textLines":1,"bbox":[58,690,190,18]}
+{"kind":"textbox","id":"sh/jm5kn6hw","slide":4,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[1168,688,54,20]}
+{"kind":"shape","id":"sh/ylw3e1gb","slide":4,"bbox":[50,168,762,437]}
+{"kind":"textbox","id":"sh/xofmx872","slide":4,"text":"Каталог мүмкіндіктері","textPreview":"Каталог мүмкіндіктері","textChars":21,"textLines":1,"bbox":[858,186,320,36]}
+{"kind":"shape","id":"sh/alo32d8b","slide":4,"bbox":[858,256,12,12]}
+{"kind":"textbox","id":"sh/bmx4vypw","slide":4,"text":"Аспаптарды бес топ бойынша сүзу","textPreview":"Аспаптарды бес топ бойынша сүзу","textChars":31,"textLines":1,"bbox":[884,248,304,68]}
+{"kind":"shape","id":"sh/oj6l03ql","slide":4,"bbox":[858,328,12,12]}
+{"kind":"textbox","id":"sh/9kfmt876","slide":4,"text":"Атауы бойынша жылдам іздеу","textPreview":"Атауы бойынша жылдам іздеу","textChars":26,"textLines":1,"bbox":[884,320,304,68]}
+{"kind":"shape","id":"sh/mx43yt8f","slide":4,"bbox":[858,400,12,12]}
+{"kind":"textbox","id":"sh/nid4ry90","slide":4,"text":"Таңдаулы аспаптарды сақтау","textPreview":"Таңдаулы аспаптарды сақтау","textChars":26,"textLines":1,"bbox":[884,392,304,68]}
+{"kind":"shape","id":"sh/8fq5cnqp","slide":4,"bbox":[858,472,12,12]}
+{"kind":"textbox","id":"sh/tgzm5s7a","slide":4,"text":"Екі немесе үш аспапты салыстыру","textPreview":"Екі немесе үш аспапты салыстыру","textChars":31,"textLines":1,"bbox":[884,464,304,68]}
+{"kind":"textbox","id":"sh/1cvmpsze","slide":4,"text":"Әр карточкадан аспаптың жеке бетіне өтуге болады.","textPreview":"Әр карточкадан аспаптың жеке бетіне өтуге болады.","textChars":49,"textLines":1,"bbox":[858,566,330,62]}
+{"kind":"image","id":"im/neh8zaho","slide":4,"name":"","alt":"Бабалар үні белгісі","bbox":[58,30,34,34]}
+{"kind":"image","id":"im/7u5kv2lc","slide":4,"name":"","geometry":"roundRect","alt":"Ұлттық аспаптар каталогы","bbox":[58,176,746,421]}
+{"kind":"notes","id":"nt/ep6063","slide":4,"text":"Дереккөз: пайдаланушы ұсынған «Аспаптар» бетінің скриншоты."}
+{"kind":"slide","id":"sl/5p1fz0","slide":5,"title":"БАБАЛАР ҮНІ","textShapes":10}
+{"kind":"textbox","id":"sh/ts7y9gf6","slide":5,"text":"БАБАЛАР ҮНІ","textPreview":"БАБАЛАР ҮНІ","textChars":11,"textLines":1,"bbox":[104,35,240,24]}
+{"kind":"textbox","id":"sh/sryx0vyl","slide":5,"text":"ИНТЕРАКТИВТІ ОҚУ","textPreview":"ИНТЕРАКТИВТІ ОҚУ","textChars":16,"textLines":1,"bbox":[930,36,292,20]}
+{"kind":"shape","id":"sh/jm5g36x4","slide":5,"bbox":[58,78,1164,0]}
+{"kind":"textbox","id":"sh/ilwfu1gj","slide":5,"text":"Аспапты танып, үнін тыңдау","textPreview":"Аспапты танып, үнін тыңдау","textChars":26,"textLines":1,"bbox":[58,96,1164,58]}
+{"kind":"shape","id":"sh/5o7y5gfa","slide":5,"bbox":[58,681,1164,0]}
+{"kind":"textbox","id":"sh/knyxwbyp","slide":5,"text":"Бабалар үні","textPreview":"Бабалар үні","textChars":11,"textLines":1,"bbox":[58,690,190,18]}
+{"kind":"textbox","id":"sh/vy5wz6h8","slide":5,"text":"05","textPreview":"05","textChars":2,"textLines":1,"bbox":[1168,688,54,20]}
+{"kind":"textbox","id":"sh/axwfq1gn","slide":5,"text":"Әр аспаптың бетінде қысқаша сипаттама, жасалу материалы, тарихы және қолданылуы беріледі. «Үнін тыңдау» батырмасы нақты орындауды бейне арқылы ашады.","textPreview":"Әр аспаптың бетінде қысқаша сипаттама, жасалу материалы, тарихы және қолданылуы беріледі. «Үнін тыңдау» батырмасы нақты орындауды бейне а...","textChars":149,"textLines":1,"bbox":[58,168,540,135]}
+{"kind":"textbox","id":"sh/gze50rq9","slide":5,"text":"Тыңдалым жүктелген кезде айналу индикаторы көрсетіледі. Бейне ашық түсті ортада көрінеді.","textPreview":"Тыңдалым жүктелген кезде айналу индикаторы көрсетіледі. Бейне ашық түсті ортада көрінеді.","textChars":89,"textLines":1,"bbox":[58,340,500,96]}
+{"kind":"textbox","id":"sh/svu5w7qd","slide":5,"text":"Домбыра","textPreview":"Домбыра","textChars":7,"textLines":1,"bbox":[648,620,188,28]}
+{"kind":"textbox","id":"sh/tw3m5cry","slide":5,"text":"Қобыз","textPreview":"Қобыз","textChars":5,"textLines":1,"bbox":[864,620,188,28]}
+{"kind":"textbox","id":"sh/69cnux87","slide":5,"text":"Жетіген","textPreview":"Жетіген","textChars":7,"textLines":1,"bbox":[1080,620,142,28]}
+{"kind":"image","id":"im/7mtcbihc","slide":5,"name":"","alt":"Бабалар үні белгісі","bbox":[58,30,34,34]}
+{"kind":"image","id":"im/2dsrax0n","slide":5,"name":"","geometry":"roundRect","alt":"Домбыра","bbox":[648,174,188,432]}
+{"kind":"image","id":"im/pgjalcje","slide":5,"name":"","geometry":"roundRect","alt":"Қобыз","bbox":[864,174,188,432]}
+{"kind":"image","id":"im/4fa9c7it","slide":5,"name":"","geometry":"roundRect","alt":"Жетіген","bbox":[1080,174,142,432]}
+{"kind":"notes","id":"nt/5p1fz0","slide":5,"text":"Дереккөз: сайттың аспап беттері, AUDIO_SOURCES.md және public/img ішіндегі аспап суреттері."}
+{"kind":"slide","id":"sl/8m2dyl","slide":6,"title":"БАБАЛАР ҮНІ","textShapes":11}
+{"kind":"textbox","id":"sh/h8rixsjy","slide":6,"text":"БАБАЛАР ҮНІ","textPreview":"БАБАЛАР ҮНІ","textChars":11,"textLines":1,"bbox":[104,35,240,24]}
+{"kind":"textbox","id":"sh/g7ih472d","slide":6,"text":"МӘДЕНИ МҰРА","textPreview":"МӘДЕНИ МҰРА","textChars":11,"textLines":1,"bbox":[930,36,292,20]}
+{"kind":"shape","id":"sh/72p0ri1w","slide":6,"bbox":[58,78,1164,0]}
+{"kind":"textbox","id":"sh/61gzydkb","slide":6,"text":"Аспаптар туралы халық аңыздары","textPreview":"Аспаптар туралы халық аңыздары","textChars":30,"textLines":1,"bbox":[58,96,1164,58]}
+{"kind":"shape","id":"sh/t4ritsj2","slide":6,"bbox":[58,681,1164,0]}
+{"kind":"textbox","id":"sh/s3yh0n2h","slide":6,"text":"Бабалар үні","textPreview":"Бабалар үні","textChars":11,"textLines":1,"bbox":[58,690,190,18]}
+{"kind":"textbox","id":"sh/jepgni10","slide":6,"text":"06","textPreview":"06","textChars":2,"textLines":1,"bbox":[1168,688,54,20]}
+{"kind":"shape","id":"sh/idgzudkf","slide":6,"bbox":[50,168,762,437]}
+{"kind":"textbox","id":"sh/p0nelcfi","slide":6,"text":"6 аңыз","textPreview":"6 аңыз","textChars":6,"textLines":1,"bbox":[858,186,320,48]}
+{"kind":"textbox","id":"sh/ixwvqhwr","slide":6,"text":"Аңыздар аспаптың пайда болуын, халық жадындағы орнын және өнердің тәрбиелік мәнін түсіндіреді.","textPreview":"Аңыздар аспаптың пайда болуын, халық жадындағы орнын және өнердің тәрбиелік мәнін түсіндіреді.","textChars":94,"textLines":1,"bbox":[858,248,330,110]}
+{"kind":"shape","id":"sh/3y5wj2xc","slide":6,"bbox":[858,398,12,12]}
+{"kind":"textbox","id":"sh/gvedo7e1","slide":6,"text":"Қорқыт ата және қобыз","textPreview":"Қорқыт ата және қобыз","textChars":21,"textLines":1,"bbox":[884,390,304,50]}
+{"kind":"shape","id":"sh/hwnehcfm","slide":6,"bbox":[858,452,12,12]}
+{"kind":"textbox","id":"sh/utcvmxwv","slide":6,"text":"Жетігеннің жеті күйі","textPreview":"Жетігеннің жеті күйі","textChars":20,"textLines":1,"bbox":[884,444,304,50]}
+{"kind":"shape","id":"sh/vulwf2xg","slide":6,"bbox":[858,506,12,12]}
+{"kind":"textbox","id":"sh/0ryx0re5","slide":6,"text":"Ақсақ құлан күйінің аңызы","textPreview":"Ақсақ құлан күйінің аңызы","textChars":25,"textLines":1,"bbox":[884,498,304,50]}
+{"kind":"shape","id":"sh/1s7etwfq","slide":6,"bbox":[858,560,12,12]}
+{"kind":"textbox","id":"sh/983edw7u","slide":6,"text":"Садақтың әні","textPreview":"Садақтың әні","textChars":12,"textLines":1,"bbox":[884,552,304,50]}
+{"kind":"image","id":"im/zet0v69g","slide":6,"name":"","alt":"Бабалар үні белгісі","bbox":[58,30,34,34]}
+{"kind":"image","id":"im/na1ovydc","slide":6,"name":"","geometry":"roundRect","alt":"Халық аңыздары бөлімі","bbox":[58,176,746,421]}
+{"kind":"notes","id":"nt/8m2dyl","slide":6,"text":"Дереккөз: пайдаланушы ұсынған «Аңыздар» бетінің скриншоты және src/data/legends.ts."}
+{"kind":"slide","id":"sl/0msfl7","slide":7,"title":"БАБАЛАР ҮНІ","textShapes":10}
+{"kind":"textbox","id":"sh/sf2tkfad","slide":7,"text":"БАБАЛАР ҮНІ","textPreview":"БАБАЛАР ҮНІ","textChars":11,"textLines":1,"bbox":[104,35,240,24]}
+{"kind":"textbox","id":"sh/tgbut0by","slide":7,"text":"ТАРИХ","textPreview":"ТАРИХ","textChars":5,"textLines":1,"bbox":[930,36,292,20]}
+{"kind":"shape","id":"sh/ip0belsb","slide":7,"bbox":[58,78,1164,0]}
+{"kind":"textbox","id":"sh/jq9snqtw","slide":7,"text":"Дала үнінің ғасырлар жолы","textPreview":"Дала үнінің ғасырлар жолы","textChars":25,"textLines":1,"bbox":[58,96,1164,58]}
+{"kind":"shape","id":"sh/4ritgvah","slide":7,"bbox":[58,681,1164,0]}
+{"kind":"textbox","id":"sh/5srap0b2","slide":7,"text":"Бабалар үні","textPreview":"Бабалар үні","textChars":11,"textLines":1,"bbox":[58,690,190,18]}
+{"kind":"textbox","id":"sh/ulgbalsf","slide":7,"text":"07","textPreview":"07","textChars":2,"textLines":1,"bbox":[1168,688,54,20]}
+{"kind":"shape","id":"sh/vm9sjqt0","slide":7,"bbox":[50,168,762,437]}
+{"kind":"textbox","id":"sh/qlsnq5gr","slide":7,"text":"8 тарихи кезең","textPreview":"8 тарихи кезең","textChars":14,"textLines":1,"bbox":[858,186,330,48]}
+{"kind":"textbox","id":"sh/doj6lkf2","slide":7,"text":"Хронология ұлттық аспаптардың аңшылық құралдарынан оркестр мен цифрлық кеңістікке дейінгі дамуын көрсетеді.","textPreview":"Хронология ұлттық аспаптардың аңшылық құралдарынан оркестр мен цифрлық кеңістікке дейінгі дамуын көрсетеді.","textChars":107,"textLines":1,"bbox":[858,252,330,120]}
+{"kind":"textbox","id":"sh/cna5sfyh","slide":7,"text":"Б.з.б. І мыңжылдық","textPreview":"Б.з.б. І мыңжылдық","textChars":18,"textLines":1,"bbox":[858,414,330,30]}
+{"kind":"shape","id":"sh/zq1onux8","slide":7,"bbox":[872,464,0,84]}
+{"kind":"textbox","id":"sh/ypsnupgn","slide":7,"text":"аңшылар дәуірінен","textPreview":"аңшылар дәуірінен","textChars":17,"textLines":1,"bbox":[892,454,270,28]}
+{"kind":"textbox","id":"sh/lcj6pkfe","slide":7,"text":"XXI ғасырдағы цифрлық жаңғыруға дейін","textPreview":"XXI ғасырдағы цифрлық жаңғыруға дейін","textChars":37,"textLines":1,"bbox":[892,506,285,52]}
+{"kind":"image","id":"im/idgryd0b","slide":7,"name":"","alt":"Бабалар үні белгісі","bbox":[58,30,34,34]}
+{"kind":"image","id":"im/szqx4juh","slide":7,"name":"","geometry":"roundRect","alt":"Аспаптар тарихы бөлімі","bbox":[58,176,746,421]}
+{"kind":"notes","id":"nt/0msfl7","slide":7,"text":"Дереккөз: пайдаланушы ұсынған «Тарих» бетінің скриншоты және src/data/timeline.ts."}
+{"kind":"slide","id":"sl/wmmwoq","slide":8,"title":"БАБАЛАР ҮНІ","textShapes":14}
+{"kind":"textbox","id":"sh/lkbip0je","slide":8,"text":"БАБАЛАР ҮНІ","textPreview":"БАБАЛАР ҮНІ","textChars":11,"textLines":1,"bbox":[104,35,240,24]}
+{"kind":"textbox","id":"sh/0j2hwv2t","slide":8,"text":"БІЛІМДІ БЕКІТУ","textPreview":"БІЛІМДІ БЕКІТУ","textChars":14,"textLines":1,"bbox":[930,36,292,20]}
+{"kind":"shape","id":"sh/rutgjq1c","slide":8,"bbox":[58,78,1164,0]}
+{"kind":"textbox","id":"sh/qtkzqlkr","slide":8,"text":"Ойнап жүріп үйрену","textPreview":"Ойнап жүріп үйрену","textChars":18,"textLines":1,"bbox":[58,96,1164,58]}
+{"kind":"shape","id":"sh/dwbylgj2","slide":8,"bbox":[58,681,1164,0]}
+{"kind":"textbox","id":"sh/cv2hsv2h","slide":8,"text":"Бабалар үні","textPreview":"Бабалар үні","textChars":11,"textLines":1,"bbox":[58,690,190,18]}
+{"kind":"textbox","id":"sh/vqd0va1g","slide":8,"text":"08","textPreview":"08","textChars":2,"textLines":1,"bbox":[1168,688,54,20]}
+{"kind":"shape","id":"sh/ap4z25kv","slide":8,"bbox":[50,168,762,437]}
+{"kind":"textbox","id":"sh/9kry107m","slide":8,"text":"4 оқу ойыны","textPreview":"4 оқу ойыны","textChars":11,"textLines":1,"bbox":[858,186,330,48]}
+{"kind":"textbox","id":"sh/mx0zq58v","slide":8,"text":"Викторина","textPreview":"Викторина","textChars":9,"textLines":1,"bbox":[858,262,310,30]}
+{"kind":"textbox","id":"sh/7y9gzqpg","slide":8,"text":"әр айналымда 10 сұрақ","textPreview":"әр айналымда 10 сұрақ","textChars":21,"textLines":1,"bbox":[858,296,330,34]}
+{"kind":"textbox","id":"sh/kvihovqp","slide":8,"text":"Жұп тап","textPreview":"Жұп тап","textChars":7,"textLines":1,"bbox":[858,344,310,30]}
+{"kind":"textbox","id":"sh/lwryx07a","slide":8,"text":"есте сақтауды жаттықтырады","textPreview":"есте сақтауды жаттықтырады","textChars":26,"textLines":1,"bbox":[858,378,330,34]}
+{"kind":"textbox","id":"sh/ytgzml8z","slide":8,"text":"Тобына бөл","textPreview":"Тобына бөл","textChars":10,"textLines":1,"bbox":[858,426,310,30]}
+{"kind":"textbox","id":"sh/zupgvqpk","slide":8,"text":"аспаптарды жіктеуді үйретеді","textPreview":"аспаптарды жіктеуді үйретеді","textChars":28,"textLines":1,"bbox":[858,460,330,34]}
+{"kind":"textbox","id":"sh/cryxkbqt","slide":8,"text":"Сөз құрастыр","textPreview":"Сөз құрастыр","textChars":12,"textLines":1,"bbox":[858,508,310,30]}
+{"kind":"textbox","id":"sh/xs7ytg7e","slide":8,"text":"аспап атауларын бекітеді","textPreview":"аспап атауларын бекітеді","textChars":24,"textLines":1,"bbox":[858,542,330,34]}
+{"kind":"image","id":"im/jmx47yxc","slide":8,"name":"","alt":"Бабалар үні белгісі","bbox":[58,30,34,34]}
+{"kind":"image","id":"im/f29cf29o","slide":8,"name":"","geometry":"roundRect","alt":"Ойындар және викторина бөлімі","bbox":[58,176,746,421]}
+{"kind":"notes","id":"nt/wmmwoq","slide":8,"text":"Дереккөз: пайдаланушы ұсынған «Ойындар» бетінің скриншоты және src/components/GamesTabs.tsx."}
+{"kind":"slide","id":"sl/g4vitq","slide":9,"title":"БАБАЛАР ҮНІ","textShapes":10}
+{"kind":"textbox","id":"sh/mlgv61oj","slide":9,"text":"БАБАЛАР ҮНІ","textPreview":"БАБАЛАР ҮНІ","textChars":11,"textLines":1,"bbox":[104,35,240,24]}
+{"kind":"textbox","id":"sh/nmpcf654","slide":9,"text":"АНЫҚТАМАЛАР","textPreview":"АНЫҚТАМАЛАР","textChars":11,"textLines":1,"bbox":[930,36,292,20]}
+{"kind":"shape","id":"sh/0zyd4b6d","slide":9,"bbox":[58,78,1164,0]}
+{"kind":"textbox","id":"sh/lk7udg7y","slide":9,"text":"Түсініктер сөздігі","textPreview":"Түсініктер сөздігі","textChars":18,"textLines":1,"bbox":[58,96,1164,58]}
+{"kind":"shape","id":"sh/yxwv21on","slide":9,"bbox":[58,681,1164,0]}
+{"kind":"textbox","id":"sh/zypcb6ps","slide":9,"text":"Бабалар үні","textPreview":"Бабалар үні","textChars":11,"textLines":1,"bbox":[58,690,190,18]}
+{"kind":"textbox","id":"sh/cved0r6h","slide":9,"text":"09","textPreview":"09","textChars":2,"textLines":1,"bbox":[1168,688,54,20]}
+{"kind":"shape","id":"sh/dwnu9w72","slide":9,"bbox":[50,168,762,437]}
+{"kind":"textbox","id":"sh/8zi9sfm9","slide":9,"text":"31 музыкалық түсінік","textPreview":"31 музыкалық түсінік","textChars":20,"textLines":1,"bbox":[858,186,340,78]}
+{"kind":"textbox","id":"sh/nyp8za5o","slide":9,"text":"Сөздік күрделі ұғымдарды оқушыға қысқа әрі түсінікті тілмен береді.","textPreview":"Сөздік күрделі ұғымдарды оқушыға қысқа әрі түсінікті тілмен береді.","textChars":67,"textLines":1,"bbox":[858,280,330,88]}
+{"kind":"shape","id":"sh/mdgrq5oj","slide":9,"bbox":[858,414,12,12]}
+{"kind":"textbox","id":"sh/lc7qx0ny","slide":9,"text":"Сөз бойынша іздеу","textPreview":"Сөз бойынша іздеу","textChars":17,"textLines":1,"bbox":[884,406,304,61]}
+{"kind":"shape","id":"sh/0by9ov6d","slide":9,"bbox":[858,479,12,12]}
+{"kind":"textbox","id":"sh/zap8vq5s","slide":9,"text":"Әліпби арқылы жылдам өту","textPreview":"Әліпби арқылы жылдам өту","textChars":24,"textLines":1,"bbox":[884,471,304,61]}
+{"kind":"shape","id":"sh/y9g7mlo7","slide":9,"bbox":[858,544,12,12]}
+{"kind":"textbox","id":"sh/d87qtgnm","slide":9,"text":"Басып шығаруға ыңғайлы нұсқа","textPreview":"Басып шығаруға ыңғайлы нұсқа","textChars":28,"textLines":1,"bbox":[884,536,304,61]}
+{"kind":"image","id":"im/s3etwnmh","slide":9,"name":"","alt":"Бабалар үні белгісі","bbox":[58,30,34,34]}
+{"kind":"image","id":"im/e5kvaps3","slide":9,"name":"","geometry":"roundRect","alt":"Түсініктер сөздігі бөлімі","bbox":[58,176,746,421]}
+{"kind":"notes","id":"nt/g4vitq","slide":9,"text":"Дереккөз: пайдаланушы ұсынған «Сөздік» бетінің скриншоты және src/data/glossary.ts."}
+{"kind":"slide","id":"sl/i9snbv","slide":10,"title":"БАБАЛАР ҮНІ","textShapes":10}
+{"kind":"textbox","id":"sh/w721gnil","slide":10,"text":"БАБАЛАР ҮНІ","textPreview":"БАБАЛАР ҮНІ","textChars":11,"textLines":1,"bbox":[104,35,240,24]}
+{"kind":"textbox","id":"sh/x8vipsz6","slide":10,"text":"ҒЫЛЫМИ ЖОБА","textPreview":"ҒЫЛЫМИ ЖОБА","textChars":11,"textLines":1,"bbox":[930,36,292,20]}
+{"kind":"shape","id":"sh/y94jix0b","slide":10,"bbox":[58,78,1164,0]}
+{"kind":"textbox","id":"sh/jad0r2hw","slide":10,"text":"Жоба авторлары және жұмыс үдерісі","textPreview":"Жоба авторлары және жұмыс үдерісі","textChars":33,"textLines":1,"bbox":[58,96,1164,58]}
+{"kind":"shape","id":"sh/kbm1k7ih","slide":10,"bbox":[58,681,1164,0]}
+{"kind":"textbox","id":"sh/5cvitcz2","slide":10,"text":"Бабалар үні","textPreview":"Бабалар үні","textChars":11,"textLines":1,"bbox":[58,690,190,18]}
+{"kind":"textbox","id":"sh/6d4jmx0n","slide":10,"text":"10","textPreview":"10","textChars":2,"textLines":1,"bbox":[1168,688,54,20]}
+{"kind":"textbox","id":"sh/7ydkv2h8","slide":10,"text":"Жоба авторы","textPreview":"Жоба авторы","textChars":11,"textLines":1,"bbox":[58,184,340,34]}
+{"kind":"textbox","id":"sh/b6103qho","slide":10,"text":"Дөңесова Асылай\nКайсарқызы","textPreview":"Дөңесова Асылай | Кайсарқызы","textChars":26,"textLines":2,"bbox":[58,226,350,74]}
+{"kind":"textbox","id":"sh/alsjal03","slide":10,"text":"Ғылыми жетекші","textPreview":"Ғылыми жетекші","textChars":14,"textLines":1,"bbox":[58,342,340,34]}
+{"kind":"textbox","id":"sh/x8ji50ze","slide":10,"text":"Демеуова Тогжан\nАбдимуратовна","textPreview":"Демеуова Тогжан | Абдимуратовна","textChars":29,"textLines":2,"bbox":[58,384,360,74]}
+{"kind":"textbox","id":"sh/w7a1cvi9","slide":10,"text":"Сайт ЖИ көмегімен жасалды. Мазмұнды таңдау мен тексеруді жоба авторы және ғылыми жетекші жүргізді.","textPreview":"Сайт ЖИ көмегімен жасалды. Мазмұнды таңдау мен тексеруді жоба авторы және ғылыми жетекші жүргізді.","textChars":98,"textLines":1,"bbox":[58,506,370,108]}
+{"kind":"shape","id":"sh/nih0fqhc","slide":10,"bbox":[466,168,764,437]}
+{"kind":"image","id":"im/u5sry1sb","slide":10,"name":"","alt":"Бабалар үні белгісі","bbox":[58,30,34,34]}
+{"kind":"image","id":"im/pobmhw36","slide":10,"name":"","geometry":"roundRect","alt":"Жоба авторлары туралы бет","bbox":[474,176,748,421]}
+{"kind":"notes","id":"nt/i9snbv","slide":10,"text":"Дереккөз: пайдаланушы ұсынған «Жоба туралы» бетінің скриншоты және src/data/authors.ts."}
+{"kind":"slide","id":"sl/oxix12","slide":11,"title":"Жобаның нәтижесі","textShapes":16}
+{"kind":"textbox","id":"sh/254jilcr","slide":11,"text":"Жобаның нәтижесі","textPreview":"Жобаның нәтижесі","textChars":16,"textLines":1,"bbox":[80,140,1120,58]}
+{"kind":"textbox","id":"sh/36dkb6tc","slide":11,"text":"Ұлттық музыкалық мұраны оқуға, тыңдауға және ойын арқылы бекітуге арналған біртұтас білім беру ортасы жасалды.","textPreview":"Ұлттық музыкалық мұраны оқуға, тыңдауға және ойын арқылы бекітуге арналған біртұтас білім беру ортасы жасалды.","textChars":110,"textLines":1,"bbox":[190,216,900,72]}
+{"kind":"textbox","id":"sh/cv61ovut","slide":11,"text":"12","textPreview":"12","textChars":2,"textLines":1,"bbox":[72,346,176,60]}
+{"kind":"textbox","id":"sh/dwf2h0be","slide":11,"text":"ұлттық аспап","textPreview":"ұлттық аспап","textChars":12,"textLines":1,"bbox":[72,416,176,40]}
+{"kind":"shape","id":"sh/q9ojmlcn","slide":11,"bbox":[254,350,0,94]}
+{"kind":"textbox","id":"sh/baxkfqt8","slide":11,"text":"5","textPreview":"5","textChars":1,"textLines":1,"bbox":[262,346,176,60]}
+{"kind":"textbox","id":"sh/0zqlsvap","slide":11,"text":"аспап тобы","textPreview":"аспап тобы","textChars":10,"textLines":1,"bbox":[262,416,176,40]}
+{"kind":"shape","id":"sh/l0z2l0ba","slide":11,"bbox":[444,350,0,94]}
+{"kind":"textbox","id":"sh/1kvidwvy","slide":11,"text":"6","textPreview":"6","textChars":1,"textLines":1,"bbox":[452,346,176,60]}
+{"kind":"textbox","id":"sh/0j2h4rud","slide":11,"text":"халық аңызы","textPreview":"халық аңызы","textChars":11,"textLines":1,"bbox":[452,416,176,40]}
+{"kind":"shape","id":"sh/zit0bmds","slide":11,"bbox":[634,350,0,94]}
+{"kind":"textbox","id":"sh/ehkz2hw7","slide":11,"text":"8","textPreview":"8","textChars":1,"textLines":1,"bbox":[642,346,176,60]}
+{"kind":"textbox","id":"sh/9ovihgvu","slide":11,"text":"тарихи кезең","textPreview":"тарихи кезең","textChars":12,"textLines":1,"bbox":[642,416,176,40]}
+{"kind":"shape","id":"sh/onmh8bu9","slide":11,"bbox":[824,350,0,94]}
+{"kind":"textbox","id":"sh/nmd0f6do","slide":11,"text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[832,346,176,60]}
+{"kind":"textbox","id":"sh/ml4z61c3","slide":11,"text":"оқу ойыны","textPreview":"оқу ойыны","textChars":9,"textLines":1,"bbox":[832,416,176,40]}
+{"kind":"shape","id":"sh/psry5cvq","slide":11,"bbox":[1014,350,0,94]}
+{"kind":"textbox","id":"sh/4rihw7e5","slide":11,"text":"31","textPreview":"31","textChars":2,"textLines":1,"bbox":[1022,346,176,60]}
+{"kind":"textbox","id":"sh/gbmhc7m1","slide":11,"text":"түсінік","textPreview":"түсінік","textChars":7,"textLines":1,"bbox":[1022,416,176,40]}
+{"kind":"shape","id":"sh/hwvilc3m","slide":11,"bbox":[456,536,368,0]}
+{"kind":"textbox","id":"sh/u94zah4v","slide":11,"text":"Назарларыңызға рақмет","textPreview":"Назарларыңызға рақмет","textChars":21,"textLines":1,"bbox":[290,566,700,56]}
+{"kind":"textbox","id":"sh/vad0jmlg","slide":11,"text":"«Бабалар үні»","textPreview":"«Бабалар үні»","textChars":13,"textLines":1,"bbox":[490,646,300,30]}
+{"kind":"image","id":"im/0nu1gjul","slide":11,"name":"","alt":"Бабалар үні белгісі","bbox":[608,48,64,64]}
+{"kind":"notes","id":"nt/oxix12","slide":11,"text":"Қорытынды көрсеткіштер сайттағы нақты бөлімдер мен мазмұн санынан алынған."}

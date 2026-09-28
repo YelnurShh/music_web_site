@@ -12,6 +12,7 @@ export const NAV: NavItem[] = [
   { href: "/tarih", label: "Тарих", hint: "8 тарихи кезең" },
   { href: "/oiyn", label: "Ойындар", hint: "Викторина, «Жұп тап», «Тобына бөл», сөз құрастыру" },
   { href: "/sozdik", label: "Сөздік", hint: "32 түсінік" },
+  { href: "/zhi-chat", label: "ЖИ чат", hint: "Аспаптар туралы сұрақ-жауап" },
   { href: "/about", label: "Жоба туралы", hint: "Мақсаты мен нұсқаулығы" },
 ];
 
